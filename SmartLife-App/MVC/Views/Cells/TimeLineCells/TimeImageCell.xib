@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="timeImageCell" id="iH5-jl-0Mf" customClass="TimeImageCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LdK-ac-wyu">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="123"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="Oz7-3H-Te6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LdK-ac-wyu" secondAttribute="trailing" id="6aZ-iW-Wa2"/>
+                <constraint firstItem="LdK-ac-wyu" firstAttribute="leading" secondItem="iH5-jl-0Mf" secondAttribute="leading" id="JuQ-gf-xN9"/>
+                <constraint firstItem="LdK-ac-wyu" firstAttribute="top" secondItem="iH5-jl-0Mf" secondAttribute="top" id="MOs-MR-8nK"/>
+                <constraint firstAttribute="bottom" secondItem="LdK-ac-wyu" secondAttribute="bottom" id="dN8-rn-ql1"/>
+            </constraints>
+            <size key="customSize" width="110" height="123"/>
+            <connections>
+                <outlet property="mImageView" destination="LdK-ac-wyu" id="Dtz-o7-oHQ"/>
+                <outlet property="widthConstraint" destination="Oz7-3H-Te6" id="K2v-Of-aMK"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="27.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

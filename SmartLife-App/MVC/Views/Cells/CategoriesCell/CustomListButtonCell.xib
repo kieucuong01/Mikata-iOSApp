@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customListButtonCell" id="Jb5-iP-yxc" customClass="CustomListButtonCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQV-Sx-etb">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="122"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-wl-o4p" customClass="SearchBarCustomView" customModule="SmartLife_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="16" width="341" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dd-Nc-dRo">
+                                <rect key="frame" x="0.0" y="71" width="110" height="33"/>
+                                <color key="backgroundColor" red="0.89411764705882346" green="0.83137254901960778" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Dd-Nc-dRo" secondAttribute="height" multiplier="110:33" id="RFD-Jm-4j7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                <connections>
+                                    <action selector="clickedButtonFirst:" destination="Jb5-iP-yxc" eventType="touchUpInside" id="eba-NH-vCD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzn-sT-Hoj">
+                                <rect key="frame" x="116" y="71" width="110" height="33"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.83137254900000002" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zzn-sT-Hoj" secondAttribute="height" multiplier="110:33" id="vbD-XN-o2h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                <connections>
+                                    <action selector="clickedButtonSecond:" destination="Jb5-iP-yxc" eventType="touchUpInside" id="A9B-zx-LKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsT-am-BEU">
+                                <rect key="frame" x="233" y="71" width="110" height="33"/>
+                                <color key="backgroundColor" red="0.89411764705882346" green="0.83137254901960778" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YsT-am-BEU" secondAttribute="height" multiplier="110:33" id="gX5-q4-33r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                <connections>
+                                    <action selector="clickedButtonThird:" destination="Jb5-iP-yxc" eventType="touchUpInside" id="vIm-eQ-jXb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YsT-am-BEU" secondAttribute="trailing" id="6ZX-ew-h4l"/>
+                            <constraint firstItem="YsT-am-BEU" firstAttribute="width" secondItem="Zzn-sT-Hoj" secondAttribute="width" id="6fa-FM-cpc"/>
+                            <constraint firstAttribute="trailing" secondItem="6dx-wl-o4p" secondAttribute="trailing" constant="2" id="9jX-1j-dkG"/>
+                            <constraint firstItem="Zzn-sT-Hoj" firstAttribute="width" secondItem="7Dd-Nc-dRo" secondAttribute="width" id="GfI-G8-ZYg"/>
+                            <constraint firstItem="7Dd-Nc-dRo" firstAttribute="top" secondItem="6dx-wl-o4p" secondAttribute="bottom" constant="14" id="HZB-3e-cPe"/>
+                            <constraint firstItem="7Dd-Nc-dRo" firstAttribute="width" secondItem="GQV-Sx-etb" secondAttribute="width" multiplier="110:343" id="IG1-J8-guU"/>
+                            <constraint firstItem="6dx-wl-o4p" firstAttribute="height" secondItem="GQV-Sx-etb" secondAttribute="width" multiplier="41:343" id="KAj-87-W1O"/>
+                            <constraint firstItem="6dx-wl-o4p" firstAttribute="leading" secondItem="GQV-Sx-etb" secondAttribute="leading" id="N6J-ED-tU5"/>
+                            <constraint firstItem="YsT-am-BEU" firstAttribute="top" secondItem="7Dd-Nc-dRo" secondAttribute="top" id="Ycg-me-rC0"/>
+                            <constraint firstAttribute="bottom" secondItem="7Dd-Nc-dRo" secondAttribute="bottom" priority="750" constant="16" id="fgA-Uo-p63"/>
+                            <constraint firstItem="6dx-wl-o4p" firstAttribute="top" secondItem="GQV-Sx-etb" secondAttribute="top" constant="16" id="u3R-GK-TjB"/>
+                            <constraint firstItem="Zzn-sT-Hoj" firstAttribute="centerX" secondItem="GQV-Sx-etb" secondAttribute="centerX" id="ufr-ws-L9o"/>
+                            <constraint firstItem="Zzn-sT-Hoj" firstAttribute="top" secondItem="7Dd-Nc-dRo" secondAttribute="top" id="w7I-eP-rqz"/>
+                            <constraint firstItem="7Dd-Nc-dRo" firstAttribute="leading" secondItem="GQV-Sx-etb" secondAttribute="leading" id="xrZ-zs-JOp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GQV-Sx-etb" firstAttribute="leading" secondItem="Jb5-iP-yxc" secondAttribute="leading" id="K0b-O2-I9s"/>
+                <constraint firstItem="GQV-Sx-etb" firstAttribute="top" secondItem="Jb5-iP-yxc" secondAttribute="top" id="bJp-AT-S2e"/>
+                <constraint firstAttribute="trailing" secondItem="GQV-Sx-etb" secondAttribute="trailing" id="cNp-ep-Nrq"/>
+                <constraint firstAttribute="bottom" secondItem="GQV-Sx-etb" secondAttribute="bottom" id="kN8-gU-tv4"/>
+            </constraints>
+            <size key="customSize" width="365" height="144"/>
+            <connections>
+                <outlet property="mBottomConstraintButtonList" destination="fgA-Uo-p63" id="af5-Zv-nSf"/>
+                <outlet property="mButtonFirst" destination="7Dd-Nc-dRo" id="SXy-SE-DsV"/>
+                <outlet property="mButtonSecond" destination="Zzn-sT-Hoj" id="WCR-6r-VUz"/>
+                <outlet property="mButtonThird" destination="YsT-am-BEU" id="r3r-4L-mDX"/>
+                <outlet property="mSearchBarCustomView" destination="6dx-wl-o4p" id="wXZ-nw-0qB"/>
+                <outlet property="mTopConstraintSearchBarCustomView" destination="u3R-GK-TjB" id="VuK-BY-aIJ"/>
+                <outlet property="mTopContraintButtonList" destination="HZB-3e-cPe" id="EQv-3v-idF"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="275"/>
+        </collectionViewCell>
+    </objects>
+</document>

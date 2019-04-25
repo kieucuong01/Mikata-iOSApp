@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmImagePopupVIew" customModule="SmartLife_App" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="NCz-5d-Jfm" id="b0w-er-bxX"/>
+                <outlet property="confirmButton" destination="Dl4-3j-p5Y" id="iB4-HS-Diy"/>
+                <outlet property="confirmImageView" destination="UMe-Lc-XEF" id="0qh-Ed-NXU"/>
+                <outlet property="containerView" destination="4QM-dg-Epb" id="KQb-n2-zCb"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="acQ-Ar-WYQ"/>
+                <outlet property="titleLabel" destination="sVe-vW-pQ2" id="yjy-iw-3iJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleAspectFill" id="iN0-l3-epB" userLabel="MainView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="4QM-dg-Epb" userLabel="ContainerView">
+                    <rect key="frame" x="24.5" y="133" width="326" height="400.5"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選択した写真を投稿します。 よろしいですか？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVe-vW-pQ2" userLabel="TitleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="sVe-vW-pQ2" secondAttribute="height" multiplier="326:50" id="pRf-Vh-ocT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIv-bW-2g2" userLabel="ContainerImageView">
+                            <rect key="frame" x="-0.5" y="50" width="326" height="290.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UMe-Lc-XEF" userLabel="ConfirmImageView">
+                                    <rect key="frame" x="16.5" y="8" width="293" height="275.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="UMe-Lc-XEF" firstAttribute="centerX" secondItem="VIv-bW-2g2" secondAttribute="centerX" id="LOT-1l-WU9"/>
+                                <constraint firstItem="UMe-Lc-XEF" firstAttribute="centerY" secondItem="VIv-bW-2g2" secondAttribute="centerY" id="bm9-ds-hpd"/>
+                                <constraint firstItem="UMe-Lc-XEF" firstAttribute="width" secondItem="VIv-bW-2g2" secondAttribute="width" multiplier="9:10" id="vNf-nX-w5b"/>
+                                <constraint firstItem="UMe-Lc-XEF" firstAttribute="height" secondItem="VIv-bW-2g2" secondAttribute="height" multiplier="95:100" id="yx3-MF-TAi"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeZ-Qs-JTs" userLabel="ButtonView">
+                            <rect key="frame" x="0.0" y="340.5" width="326" height="60"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCz-5d-Jfm" userLabel="CancelButton" customClass="UIBorderButton" customModule="SmartLife_App" customModuleProvider="target">
+                                    <rect key="frame" x="10" y="5" width="143" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="myq-dd-Utb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dl4-3j-p5Y" userLabel="ConfirmButton" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                                    <rect key="frame" x="173" y="5" width="143" height="50"/>
+                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="confirmButtonAction:" destination="-1" eventType="touchUpInside" id="cIe-9B-34a"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Dl4-3j-p5Y" firstAttribute="width" secondItem="XeZ-Qs-JTs" secondAttribute="width" multiplier="143:326" id="2SZ-OL-EoN"/>
+                                <constraint firstItem="NCz-5d-Jfm" firstAttribute="centerX" secondItem="XeZ-Qs-JTs" secondAttribute="centerX" multiplier="1:2" id="GS7-hR-0mH"/>
+                                <constraint firstItem="Dl4-3j-p5Y" firstAttribute="height" secondItem="XeZ-Qs-JTs" secondAttribute="height" multiplier="50:60" id="JP9-hw-VF3"/>
+                                <constraint firstItem="NCz-5d-Jfm" firstAttribute="centerY" secondItem="XeZ-Qs-JTs" secondAttribute="centerY" id="P8k-N8-GHd"/>
+                                <constraint firstItem="NCz-5d-Jfm" firstAttribute="height" secondItem="XeZ-Qs-JTs" secondAttribute="height" multiplier="50:60" id="Zmf-FR-iiF"/>
+                                <constraint firstItem="NCz-5d-Jfm" firstAttribute="width" secondItem="XeZ-Qs-JTs" secondAttribute="width" multiplier="143:326" id="gKY-ry-gd7"/>
+                                <constraint firstAttribute="width" secondItem="XeZ-Qs-JTs" secondAttribute="height" multiplier="326:60" id="o3w-wR-tVU"/>
+                                <constraint firstItem="Dl4-3j-p5Y" firstAttribute="centerX" secondItem="XeZ-Qs-JTs" secondAttribute="centerX" multiplier="3:2" id="tit-5c-8Cg"/>
+                                <constraint firstItem="Dl4-3j-p5Y" firstAttribute="centerY" secondItem="XeZ-Qs-JTs" secondAttribute="centerY" id="xcE-q2-Z05"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VIv-bW-2g2" firstAttribute="width" secondItem="4QM-dg-Epb" secondAttribute="width" id="4nv-ra-QJw"/>
+                        <constraint firstItem="sVe-vW-pQ2" firstAttribute="width" secondItem="4QM-dg-Epb" secondAttribute="width" id="BYJ-ae-XaG"/>
+                        <constraint firstItem="XeZ-Qs-JTs" firstAttribute="centerX" secondItem="4QM-dg-Epb" secondAttribute="centerX" id="CtB-vZ-mqt"/>
+                        <constraint firstItem="XeZ-Qs-JTs" firstAttribute="width" secondItem="4QM-dg-Epb" secondAttribute="width" id="GoB-MX-eZ5"/>
+                        <constraint firstItem="VIv-bW-2g2" firstAttribute="centerX" secondItem="4QM-dg-Epb" secondAttribute="centerX" id="MYb-vh-PRl"/>
+                        <constraint firstItem="VIv-bW-2g2" firstAttribute="bottom" secondItem="XeZ-Qs-JTs" secondAttribute="top" id="Ovj-bR-kKU"/>
+                        <constraint firstItem="VIv-bW-2g2" firstAttribute="top" secondItem="sVe-vW-pQ2" secondAttribute="bottom" id="glh-CM-9ET"/>
+                        <constraint firstItem="XeZ-Qs-JTs" firstAttribute="bottom" secondItem="4QM-dg-Epb" secondAttribute="bottom" id="iYl-tr-F7F"/>
+                        <constraint firstItem="sVe-vW-pQ2" firstAttribute="top" secondItem="4QM-dg-Epb" secondAttribute="top" id="nuf-Id-Z9x"/>
+                        <constraint firstItem="sVe-vW-pQ2" firstAttribute="centerX" secondItem="4QM-dg-Epb" secondAttribute="centerX" id="uiQ-w9-ev6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4QM-dg-Epb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DIc-4g-TdG"/>
+                <constraint firstItem="4QM-dg-Epb" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SAW-zD-9kR"/>
+                <constraint firstItem="4QM-dg-Epb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="6:10" id="Zlc-JO-4Au"/>
+                <constraint firstItem="4QM-dg-Epb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="326:375" id="man-S3-ro1"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

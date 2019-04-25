@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavBarSettingView" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvE-fY-den" customClass="UIShadowView" customModule="SmartLife_App" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="22" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVr-t4-tug">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qVr-t4-tug" secondAttribute="height" id="L51-sG-HQO"/>
+                            </constraints>
+                            <state key="normal" image="button_back"/>
+                            <connections>
+                                <action selector="clickButtonBack:" destination="iN0-l3-epB" eventType="touchUpInside" id="cTM-mX-CN3"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-Xf-mBu">
+                            <rect key="frame" x="60" y="0.0" width="255" height="60"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="j4g-Xf-mBu" firstAttribute="centerY" secondItem="qVr-t4-tug" secondAttribute="centerY" id="2ok-kZ-WZQ"/>
+                        <constraint firstAttribute="width" secondItem="tvE-fY-den" secondAttribute="height" multiplier="375:60" id="3Gz-rK-v1J"/>
+                        <constraint firstItem="j4g-Xf-mBu" firstAttribute="height" secondItem="qVr-t4-tug" secondAttribute="height" id="Nq6-w5-dld"/>
+                        <constraint firstItem="j4g-Xf-mBu" firstAttribute="centerX" secondItem="tvE-fY-den" secondAttribute="centerX" id="X1C-WD-E4g"/>
+                        <constraint firstItem="j4g-Xf-mBu" firstAttribute="leading" secondItem="qVr-t4-tug" secondAttribute="trailing" id="lIa-Df-zuC"/>
+                        <constraint firstItem="qVr-t4-tug" firstAttribute="height" secondItem="tvE-fY-den" secondAttribute="height" id="to9-lP-w6A"/>
+                        <constraint firstItem="qVr-t4-tug" firstAttribute="leading" secondItem="tvE-fY-den" secondAttribute="leading" id="vge-yK-OEb"/>
+                        <constraint firstAttribute="bottom" secondItem="qVr-t4-tug" secondAttribute="bottom" id="xR3-OF-Adf"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqW-BE-p3C">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jqW-BE-p3C" firstAttribute="bottom" secondItem="tvE-fY-den" secondAttribute="top" id="Bcm-KL-6Oc"/>
+                <constraint firstItem="jqW-BE-p3C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CvJ-fC-WPt"/>
+                <constraint firstItem="tvE-fY-den" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gxm-nr-YUd"/>
+                <constraint firstItem="jqW-BE-p3C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JE2-zU-cnx"/>
+                <constraint firstAttribute="bottom" secondItem="tvE-fY-den" secondAttribute="bottom" id="MMd-0j-sdg"/>
+                <constraint firstItem="jqW-BE-p3C" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="WHL-vB-jcW"/>
+                <constraint firstAttribute="trailing" secondItem="tvE-fY-den" secondAttribute="trailing" id="jPQ-Uf-VbC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton" destination="qVr-t4-tug" id="wbq-D3-pSs"/>
+                <outlet property="titleLabel" destination="j4g-Xf-mBu" id="acg-tY-m6u"/>
+                <outlet property="viewTop" destination="tvE-fY-den" id="Zsb-TT-DWL"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_back" width="50" height="50"/>
+    </resources>
+</document>

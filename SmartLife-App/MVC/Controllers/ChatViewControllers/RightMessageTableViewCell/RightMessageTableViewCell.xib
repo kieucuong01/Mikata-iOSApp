@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RightMessageTableViewCell" rowHeight="69" id="8PW-W8-EyY" customClass="RightMessageTableViewCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="8PW-W8-EyY" id="L1F-k6-Wng">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjj-j8-eUl" userLabel="DateLabel">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="A6t-An-vtN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="Read" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXI-4Q-3my" userLabel="ReadLabel">
+                        <rect key="frame" x="206.5" y="61.5" width="24.5" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Jki-Nr-Aue" userLabel="TextContentView">
+                        <rect key="frame" x="234" y="35" width="81" height="39.5"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Content" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-wd-KZE" userLabel="TextContentTextView">
+                                <rect key="frame" x="8" y="3" width="65" height="33.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.41960784309999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UBI-wd-KZE" firstAttribute="centerX" secondItem="Jki-Nr-Aue" secondAttribute="centerX" id="KvW-zs-99U"/>
+                            <constraint firstItem="UBI-wd-KZE" firstAttribute="centerY" secondItem="Jki-Nr-Aue" secondAttribute="centerY" id="N0o-PA-eAi"/>
+                            <constraint firstItem="UBI-wd-KZE" firstAttribute="width" secondItem="Jki-Nr-Aue" secondAttribute="width" constant="-16" id="QQe-2Z-OzU"/>
+                            <constraint firstItem="UBI-wd-KZE" firstAttribute="height" secondItem="Jki-Nr-Aue" secondAttribute="height" constant="-6" id="Tsy-RZ-wd1"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="Time" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bad-3A-epN" userLabel="TimeLabel">
+                        <rect key="frame" x="291" y="74.5" width="24" height="12"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Jki-Nr-Aue" firstAttribute="width" relation="lessThanOrEqual" secondItem="L1F-k6-Wng" secondAttribute="width" multiplier="0.75" id="3wt-jM-189"/>
+                    <constraint firstItem="cjj-j8-eUl" firstAttribute="leading" secondItem="L1F-k6-Wng" secondAttribute="leading" id="A3h-c8-bk0"/>
+                    <constraint firstAttribute="trailing" secondItem="cjj-j8-eUl" secondAttribute="trailing" id="Asf-Rr-sMW"/>
+                    <constraint firstItem="Jki-Nr-Aue" firstAttribute="trailing" secondItem="L1F-k6-Wng" secondAttribute="trailing" constant="-5" id="OOH-ck-rDc"/>
+                    <constraint firstItem="bad-3A-epN" firstAttribute="top" secondItem="UBI-wd-KZE" secondAttribute="bottom" constant="3" id="Qh2-no-DaG"/>
+                    <constraint firstItem="Jki-Nr-Aue" firstAttribute="bottom" secondItem="L1F-k6-Wng" secondAttribute="bottom" constant="-15" id="R6U-Jd-Kts"/>
+                    <constraint firstItem="XXI-4Q-3my" firstAttribute="trailing" secondItem="Jki-Nr-Aue" secondAttribute="leading" constant="-3" id="jdV-7z-Mxd"/>
+                    <constraint firstItem="XXI-4Q-3my" firstAttribute="bottom" secondItem="Jki-Nr-Aue" secondAttribute="bottom" constant="-1" id="nkn-MR-ijk"/>
+                    <constraint firstItem="cjj-j8-eUl" firstAttribute="top" secondItem="L1F-k6-Wng" secondAttribute="top" id="pmw-Q1-ZcO"/>
+                    <constraint firstItem="bad-3A-epN" firstAttribute="trailing" secondItem="Jki-Nr-Aue" secondAttribute="trailing" id="se1-Zr-GTH"/>
+                    <constraint firstItem="Jki-Nr-Aue" firstAttribute="top" secondItem="cjj-j8-eUl" secondAttribute="bottom" constant="5" id="uH0-3W-XWk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dateLabel" destination="cjj-j8-eUl" id="jL7-Pb-3V2"/>
+                <outlet property="mConstraintHeightDate" destination="A6t-An-vtN" id="1DZ-yl-Jck"/>
+                <outlet property="readLabel" destination="XXI-4Q-3my" id="kHj-wO-CfZ"/>
+                <outlet property="textContentTextView" destination="UBI-wd-KZE" id="nXf-Qk-3ky"/>
+                <outlet property="textContentView" destination="Jki-Nr-Aue" id="1Gh-ym-kFa"/>
+                <outlet property="timeLabel" destination="bad-3A-epN" id="Eur-fd-qwL"/>
+            </connections>
+            <point key="canvasLocation" x="-43" y="-252"/>
+        </tableViewCell>
+    </objects>
+</document>

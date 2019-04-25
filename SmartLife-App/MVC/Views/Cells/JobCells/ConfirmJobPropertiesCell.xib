@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="confirmJobPropertiesCell" rowHeight="70" id="AGt-28-OL3" customClass="ConfirmJobPropertiesCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AGt-28-OL3" id="KdN-cC-Zct">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="氏名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUf-yw-uoh">
+                        <rect key="frame" x="34" y="0.0" width="295" height="21.5"/>
+                        <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="12"/>
+                        <color key="textColor" red="0.4823529411764706" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="船橋 美沙子" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eed-y8-akx">
+                        <rect key="frame" x="34" y="32.5" width="295" height="14"/>
+                        <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="14"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XUf-yw-uoh" firstAttribute="top" secondItem="KdN-cC-Zct" secondAttribute="top" id="0bW-vO-rfm"/>
+                    <constraint firstItem="eed-y8-akx" firstAttribute="leading" secondItem="XUf-yw-uoh" secondAttribute="leading" id="2gD-2H-dfp"/>
+                    <constraint firstItem="XUf-yw-uoh" firstAttribute="leading" secondItem="KdN-cC-Zct" secondAttribute="leading" constant="34" id="9iy-Iw-j9Y"/>
+                    <constraint firstItem="XUf-yw-uoh" firstAttribute="trailing" secondItem="eed-y8-akx" secondAttribute="trailing" id="CWt-Gq-5aw"/>
+                    <constraint firstItem="eed-y8-akx" firstAttribute="top" secondItem="XUf-yw-uoh" secondAttribute="bottom" constant="11" id="PIg-VW-r8s"/>
+                    <constraint firstAttribute="bottom" secondItem="eed-y8-akx" secondAttribute="bottom" constant="23" id="bgf-zI-CzI"/>
+                    <constraint firstItem="eed-y8-akx" firstAttribute="width" secondItem="KdN-cC-Zct" secondAttribute="width" multiplier="260:326" id="wxX-0W-YdT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBottomConstraintLabelContent" destination="bgf-zI-CzI" id="dbO-Rr-Zrl"/>
+                <outlet property="mLabelContent" destination="eed-y8-akx" id="506-Y7-LLn"/>
+                <outlet property="mLabelTitle" destination="XUf-yw-uoh" id="Sqj-au-B2F"/>
+                <outlet property="mLeadingConstraintLabelTitle" destination="9iy-Iw-j9Y" id="J14-MR-a49"/>
+                <outlet property="mTopConstraintLabelContent" destination="PIg-VW-r8s" id="00c-Y9-iJq"/>
+            </connections>
+            <point key="canvasLocation" x="-79" y="23"/>
+        </tableViewCell>
+    </objects>
+</document>

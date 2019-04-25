@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="customHeaderFIlterCell" id="KGk-i7-Jjw" customClass="CustomHeaderFilterCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xS9-JL-xoo">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="59.5"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-56-2ZA">
+                                <rect key="frame" x="14" y="12" width="314" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbY-CJ-LM8">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="34"/>
+                                        <color key="backgroundColor" red="0.99607843137254903" green="0.96470588235294119" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                        <state key="normal" title="ノート">
+                                            <color key="titleColor" red="0.72156862745098038" green="0.62352941176470589" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickedButtonLeft:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bP8-rb-SqZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIO-Zf-ePP">
+                                        <rect key="frame" x="157" y="0.0" width="157" height="34"/>
+                                        <color key="backgroundColor" red="0.72156862745098038" green="0.62352941176470589" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                        <state key="normal" title="コメント">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickedButtonRight:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h4g-kj-UtB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pIO-Zf-ePP" firstAttribute="top" secondItem="NbY-CJ-LM8" secondAttribute="top" id="4J8-RM-ucP"/>
+                                    <constraint firstItem="NbY-CJ-LM8" firstAttribute="leading" secondItem="eaB-56-2ZA" secondAttribute="leading" id="4TD-ED-RMw"/>
+                                    <constraint firstItem="pIO-Zf-ePP" firstAttribute="leading" secondItem="NbY-CJ-LM8" secondAttribute="trailing" id="94d-Yt-vjD"/>
+                                    <constraint firstItem="pIO-Zf-ePP" firstAttribute="bottom" secondItem="NbY-CJ-LM8" secondAttribute="bottom" id="BRn-oB-gOA"/>
+                                    <constraint firstAttribute="trailing" secondItem="pIO-Zf-ePP" secondAttribute="trailing" id="ETR-nc-vn1"/>
+                                    <constraint firstItem="NbY-CJ-LM8" firstAttribute="height" secondItem="eaB-56-2ZA" secondAttribute="height" id="cwo-u5-lll"/>
+                                    <constraint firstItem="NbY-CJ-LM8" firstAttribute="width" secondItem="eaB-56-2ZA" secondAttribute="width" multiplier="0.5" id="lre-Yd-t1r"/>
+                                    <constraint firstItem="NbY-CJ-LM8" firstAttribute="centerY" secondItem="eaB-56-2ZA" secondAttribute="centerY" id="zx1-YA-qQA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eaB-56-2ZA" firstAttribute="centerY" secondItem="xS9-JL-xoo" secondAttribute="centerY" id="69S-2v-AsC"/>
+                            <constraint firstItem="eaB-56-2ZA" firstAttribute="height" secondItem="xS9-JL-xoo" secondAttribute="height" multiplier="34:60" id="C5h-gn-z4W"/>
+                            <constraint firstItem="eaB-56-2ZA" firstAttribute="centerX" secondItem="xS9-JL-xoo" secondAttribute="centerX" id="Oai-i4-X4F"/>
+                            <constraint firstItem="eaB-56-2ZA" firstAttribute="width" secondItem="xS9-JL-xoo" secondAttribute="width" multiplier="343:375" id="gaJ-M2-1tA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="xS9-JL-xoo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0zN-b2-8dJ"/>
+                    <constraint firstAttribute="bottom" secondItem="xS9-JL-xoo" secondAttribute="bottom" id="QbM-7J-APD"/>
+                    <constraint firstItem="xS9-JL-xoo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="t7f-34-Aci"/>
+                    <constraint firstAttribute="trailing" secondItem="xS9-JL-xoo" secondAttribute="trailing" id="vjB-3h-dzV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="mButtonLeft" destination="NbY-CJ-LM8" id="RYR-Yf-s7d"/>
+                <outlet property="mButtonRight" destination="pIO-Zf-ePP" id="9fq-11-wFt"/>
+                <outlet property="mViewContentTwoButtons" destination="eaB-56-2ZA" id="Afe-VO-Va4"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomThirdView" customModule="SmartLife_App" customModuleProvider="target">
+            <connections>
+                <outlet property="mButtonFavorite" destination="JJb-St-gNV" id="Cbl-Xo-h0K"/>
+                <outlet property="mLabelCompany" destination="PPC-os-djO" id="U7r-ib-B8E"/>
+                <outlet property="mLabelSalaryHour" destination="uLM-JA-X29" id="qdV-K2-hIr"/>
+                <outlet property="mLabelTimeTravel" destination="nUg-ms-rZ4" id="Y9S-Oc-qJv"/>
+                <outlet property="mLabelTitle" destination="MMX-gI-Xdz" id="odl-78-pa9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyJ-2g-zQG">
+                    <rect key="frame" x="231" y="0.0" width="144" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="QNh-Za-vVb">
+                            <rect key="frame" x="0.0" y="20" width="144" height="111"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="QNh-Za-vVb" firstAttribute="height" secondItem="iyJ-2g-zQG" secondAttribute="height" multiplier="107:144" id="CdD-rq-bEm"/>
+                        <constraint firstItem="QNh-Za-vVb" firstAttribute="width" secondItem="iyJ-2g-zQG" secondAttribute="width" id="Pb8-07-Aok"/>
+                        <constraint firstItem="QNh-Za-vVb" firstAttribute="centerX" secondItem="iyJ-2g-zQG" secondAttribute="centerX" id="eZh-ww-u1u"/>
+                        <constraint firstItem="QNh-Za-vVb" firstAttribute="centerY" secondItem="iyJ-2g-zQG" secondAttribute="centerY" id="vbm-ae-7YX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-wC-3m9">
+                    <rect key="frame" x="0.0" y="0.0" width="231" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyH-oE-95y">
+                            <rect key="frame" x="0.0" y="0.0" width="238" height="68"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(1)ホールスタッフ (2)キッチンスタッフ 大募集【大学生大歓迎】" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMX-gI-Xdz">
+                                    <rect key="frame" x="5" y="4" width="228" height="60"/>
+                                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                                    <color key="textColor" red="0.34509803919999998" green="0.2470588235" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="MMX-gI-Xdz" firstAttribute="centerX" secondItem="eyH-oE-95y" secondAttribute="centerX" id="ccI-vI-VqT"/>
+                                <constraint firstItem="MMX-gI-Xdz" firstAttribute="centerY" secondItem="eyH-oE-95y" secondAttribute="centerY" id="dtp-h2-YSJ"/>
+                                <constraint firstItem="MMX-gI-Xdz" firstAttribute="height" secondItem="eyH-oE-95y" secondAttribute="height" constant="-8" id="n5M-2t-rHA"/>
+                                <constraint firstItem="MMX-gI-Xdz" firstAttribute="width" secondItem="eyH-oE-95y" secondAttribute="width" constant="-10" id="phf-nE-ryd"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJb-St-gNV">
+                            <rect key="frame" x="180" y="99" width="51" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JJb-St-gNV" secondAttribute="height" id="mIg-bL-gnV"/>
+                            </constraints>
+                            <state key="normal" image="favorite_off"/>
+                            <state key="selected" image="favorite_on"/>
+                            <connections>
+                                <action selector="clickedButtonFavorited:" destination="-1" eventType="touchUpInside" id="urJ-xH-BR8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZQ-9i-vwz">
+                            <rect key="frame" x="5" y="131" width="52" height="13"/>
+                            <color key="backgroundColor" red="0.72156862745098038" green="0.62352941176470589" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="9"/>
+                            <state key="normal" title="アルバイト">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik5-jO-Uyt">
+                            <rect key="frame" x="62" y="131" width="52" height="13"/>
+                            <color key="backgroundColor" red="0.72156862749999995" green="0.62352941179999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="9"/>
+                            <state key="normal" title="インターン">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(株) ◯◯◯◯◯◯◯◯◯..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPC-os-djO">
+                            <rect key="frame" x="5" y="105" width="164" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD7-dD-ap4">
+                            <rect key="frame" x="5" y="68" width="24" height="29"/>
+                            <color key="backgroundColor" red="0.72156862745098038" green="0.62352941176470589" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="ic_japan_currency"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjv-mY-Wbc">
+                            <rect key="frame" x="29" y="67.5" width="86.5" height="29"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時給1,000円〜 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLM-JA-X29">
+                                    <rect key="frame" x="2" y="0.0" width="82.5" height="29"/>
+                                    <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="11"/>
+                                    <color key="textColor" red="0.34509803921568627" green="0.24705882352941178" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="uLM-JA-X29" firstAttribute="width" secondItem="hjv-mY-Wbc" secondAttribute="width" constant="-4" id="TPn-nS-Ruk"/>
+                                <constraint firstItem="uLM-JA-X29" firstAttribute="centerY" secondItem="hjv-mY-Wbc" secondAttribute="centerY" id="VA8-Ye-uVW"/>
+                                <constraint firstItem="uLM-JA-X29" firstAttribute="centerX" secondItem="hjv-mY-Wbc" secondAttribute="centerX" id="eZq-6E-N9c"/>
+                                <constraint firstItem="uLM-JA-X29" firstAttribute="height" secondItem="hjv-mY-Wbc" secondAttribute="height" id="ji5-FK-osz"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSd-W6-rPo">
+                            <rect key="frame" x="115.5" y="68" width="24" height="29"/>
+                            <color key="backgroundColor" red="0.72156862749999995" green="0.62352941179999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="ic_train"/>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSm-RM-k83">
+                            <rect key="frame" x="139.5" y="67.5" width="91.5" height="29"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUg-ms-rZ4" userLabel="「渋谷駅」   より徒歩00分">
+                                    <rect key="frame" x="1.5" y="0.0" width="87.5" height="29"/>
+                                    <string key="text">「渋谷駅」
+  より徒歩00分</string>
+                                    <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="11"/>
+                                    <color key="textColor" red="0.34509803921568627" green="0.24705882352941178" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="nUg-ms-rZ4" firstAttribute="centerX" secondItem="zSm-RM-k83" secondAttribute="centerX" id="AvM-Bg-R99"/>
+                                <constraint firstItem="nUg-ms-rZ4" firstAttribute="height" secondItem="zSm-RM-k83" secondAttribute="height" id="JP8-ne-cZd"/>
+                                <constraint firstItem="nUg-ms-rZ4" firstAttribute="centerY" secondItem="zSm-RM-k83" secondAttribute="centerY" id="LjN-eS-K3D"/>
+                                <constraint firstItem="nUg-ms-rZ4" firstAttribute="width" secondItem="zSm-RM-k83" secondAttribute="width" constant="-4" id="wOy-ek-eF6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zSm-RM-k83" firstAttribute="leading" secondItem="DSd-W6-rPo" secondAttribute="trailing" id="092-dC-aQl"/>
+                        <constraint firstItem="zSm-RM-k83" firstAttribute="centerY" secondItem="KD7-dD-ap4" secondAttribute="centerY" id="249-tf-UtK"/>
+                        <constraint firstItem="eyH-oE-95y" firstAttribute="top" secondItem="WSf-wC-3m9" secondAttribute="top" id="2qg-nT-cfj"/>
+                        <constraint firstAttribute="trailing" secondItem="JJb-St-gNV" secondAttribute="trailing" id="9hh-OI-fAp"/>
+                        <constraint firstItem="KD7-dD-ap4" firstAttribute="top" secondItem="eyH-oE-95y" secondAttribute="bottom" id="B2M-v1-FfV"/>
+                        <constraint firstItem="Ik5-jO-Uyt" firstAttribute="centerY" secondItem="sZQ-9i-vwz" secondAttribute="centerY" id="Nfh-Mr-EP0"/>
+                        <constraint firstItem="Ik5-jO-Uyt" firstAttribute="height" secondItem="sZQ-9i-vwz" secondAttribute="height" id="Nhs-wS-PSE"/>
+                        <constraint firstItem="DSd-W6-rPo" firstAttribute="leading" secondItem="hjv-mY-Wbc" secondAttribute="trailing" id="RfI-Ye-tWM"/>
+                        <constraint firstItem="PPC-os-djO" firstAttribute="top" secondItem="JJb-St-gNV" secondAttribute="top" constant="6" id="RgU-wA-esK"/>
+                        <constraint firstItem="zSm-RM-k83" firstAttribute="height" secondItem="KD7-dD-ap4" secondAttribute="height" id="SaN-Jw-hbI"/>
+                        <constraint firstItem="hjv-mY-Wbc" firstAttribute="height" secondItem="KD7-dD-ap4" secondAttribute="height" id="VQ6-a6-S8K"/>
+                        <constraint firstAttribute="trailing" secondItem="zSm-RM-k83" secondAttribute="trailing" id="ZWy-co-eHP"/>
+                        <constraint firstItem="eyH-oE-95y" firstAttribute="leading" secondItem="WSf-wC-3m9" secondAttribute="leading" id="c9a-zg-G3F"/>
+                        <constraint firstItem="hjv-mY-Wbc" firstAttribute="centerY" secondItem="KD7-dD-ap4" secondAttribute="centerY" id="cuJ-KC-u6q"/>
+                        <constraint firstItem="hjv-mY-Wbc" firstAttribute="leading" secondItem="KD7-dD-ap4" secondAttribute="trailing" id="dWM-UR-E31"/>
+                        <constraint firstItem="sZQ-9i-vwz" firstAttribute="leading" secondItem="MMX-gI-Xdz" secondAttribute="leading" id="dsj-kW-1HD"/>
+                        <constraint firstItem="DSd-W6-rPo" firstAttribute="height" secondItem="KD7-dD-ap4" secondAttribute="height" id="gMj-Ns-XUx"/>
+                        <constraint firstAttribute="bottom" secondItem="sZQ-9i-vwz" secondAttribute="bottom" constant="6" id="k1E-kW-wej"/>
+                        <constraint firstItem="hjv-mY-Wbc" firstAttribute="trailing" secondItem="WSf-wC-3m9" secondAttribute="centerX" id="k9t-Vl-7Oy"/>
+                        <constraint firstItem="Ik5-jO-Uyt" firstAttribute="width" secondItem="sZQ-9i-vwz" secondAttribute="width" id="mmY-yO-30g"/>
+                        <constraint firstItem="Ik5-jO-Uyt" firstAttribute="leading" secondItem="sZQ-9i-vwz" secondAttribute="trailing" constant="5" id="oKz-gI-Vps"/>
+                        <constraint firstItem="PPC-os-djO" firstAttribute="leading" secondItem="MMX-gI-Xdz" secondAttribute="leading" id="rk6-OY-Dd7"/>
+                        <constraint firstAttribute="trailing" secondItem="eyH-oE-95y" secondAttribute="trailing" constant="-7" id="rod-ht-0KA"/>
+                        <constraint firstItem="DSd-W6-rPo" firstAttribute="centerY" secondItem="KD7-dD-ap4" secondAttribute="centerY" id="w59-yz-ORQ"/>
+                        <constraint firstItem="KD7-dD-ap4" firstAttribute="leading" secondItem="MMX-gI-Xdz" secondAttribute="leading" id="wu2-2f-d52"/>
+                        <constraint firstAttribute="bottom" secondItem="JJb-St-gNV" secondAttribute="bottom" id="xLX-Qu-e9P"/>
+                        <constraint firstItem="DSd-W6-rPo" firstAttribute="width" secondItem="KD7-dD-ap4" secondAttribute="width" id="yhk-Dc-gUo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eyH-oE-95y" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="68:375" id="3Qv-5F-udP"/>
+                <constraint firstItem="JJb-St-gNV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="51:375" id="7rA-2X-hO5"/>
+                <constraint firstItem="WSf-wC-3m9" firstAttribute="bottom" secondItem="iyJ-2g-zQG" secondAttribute="bottom" id="BsV-Rq-pKc"/>
+                <constraint firstItem="KD7-dD-ap4" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="29:375" id="I0O-CX-W5o"/>
+                <constraint firstItem="iyJ-2g-zQG" firstAttribute="leading" secondItem="WSf-wC-3m9" secondAttribute="trailing" id="Key-UJ-baf"/>
+                <constraint firstItem="WSf-wC-3m9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="L5W-Yj-j7J"/>
+                <constraint firstItem="sZQ-9i-vwz" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="13:375" id="Ova-8r-6c1"/>
+                <constraint firstItem="sZQ-9i-vwz" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="52:375" id="QQ6-cA-AD4"/>
+                <constraint firstItem="PPC-os-djO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="164:375" id="g0Z-3O-OJu"/>
+                <constraint firstItem="iyJ-2g-zQG" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="150:375" id="hUS-Wc-oBp"/>
+                <constraint firstItem="WSf-wC-3m9" firstAttribute="top" secondItem="iyJ-2g-zQG" secondAttribute="top" id="kor-sv-yuI"/>
+                <constraint firstItem="iyJ-2g-zQG" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="lQt-hG-UHs"/>
+                <constraint firstItem="KD7-dD-ap4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="24:375" id="nwB-j6-kPz"/>
+                <constraint firstItem="iyJ-2g-zQG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="144:375" id="tJH-vc-8SW"/>
+                <constraint firstItem="iyJ-2g-zQG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="w1a-rf-SSa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="106.5" y="196"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favorite_off" width="51" height="51"/>
+        <image name="favorite_on" width="51" height="51"/>
+        <image name="ic_japan_currency" width="24" height="30"/>
+        <image name="ic_train" width="24" height="34"/>
+        <image name="tempImage.png" width="343" height="217"/>
+    </resources>
+</document>

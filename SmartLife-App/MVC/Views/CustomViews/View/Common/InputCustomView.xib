@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputCustomView" customModule="SmartLife_App" customModuleProvider="target">
+            <connections>
+                <outlet property="mButtonCamera" destination="eao-Ke-ctz" id="wmm-NQ-OcT"/>
+                <outlet property="mButtonImage" destination="eqF-dO-mvX" id="kai-rO-bOI"/>
+                <outlet property="mButtonSent" destination="PRA-mk-Ub7" id="EeH-Vh-Xte"/>
+                <outlet property="mTextView" destination="FXf-gH-mQk" id="vvx-kC-LLA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqF-dO-mvX">
+                    <rect key="frame" x="44" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eqF-dO-mvX" secondAttribute="height" id="DQo-NL-k9G"/>
+                    </constraints>
+                    <state key="normal" image="icon_image"/>
+                    <connections>
+                        <action selector="clickedButtonImage:" destination="-1" eventType="touchUpInside" id="nY9-UJ-hP0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eao-Ke-ctz">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <state key="normal" image="icon_camera"/>
+                    <connections>
+                        <action selector="clickedButtonCamera:" destination="-1" eventType="touchUpInside" id="aVW-5K-nTN"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="251" text="メッセージを入力してください" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FXf-gH-mQk">
+                    <rect key="frame" x="88" y="8" width="213" height="36"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.72156862749999995" green="0.62352941179999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fMv-Y3-3kc"/>
+                    </connections>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRA-mk-Ub7">
+                    <rect key="frame" x="309" y="7" width="58" height="28"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.66274509803921566" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PRA-mk-Ub7" secondAttribute="height" multiplier="29:14" id="aBq-yf-Z47"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="送信">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickedButttonSent:" destination="-1" eventType="touchUpInside" id="99L-sn-giC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PRA-mk-Ub7" firstAttribute="leading" secondItem="FXf-gH-mQk" secondAttribute="trailing" constant="8" id="5RK-rG-DOe"/>
+                <constraint firstItem="eao-Ke-ctz" firstAttribute="width" secondItem="eqF-dO-mvX" secondAttribute="width" id="CvO-7C-BED"/>
+                <constraint firstItem="eqF-dO-mvX" firstAttribute="leading" secondItem="eao-Ke-ctz" secondAttribute="trailing" id="GFv-Jk-08u"/>
+                <constraint firstItem="eqF-dO-mvX" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="44:375" id="Sa1-9v-wp2"/>
+                <constraint firstItem="PRA-mk-Ub7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="SoV-hd-12y"/>
+                <constraint firstItem="PRA-mk-Ub7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="58:375" id="WxP-X4-3PE"/>
+                <constraint firstItem="eao-Ke-ctz" firstAttribute="top" secondItem="eqF-dO-mvX" secondAttribute="top" id="YCT-At-L0Q"/>
+                <constraint firstAttribute="bottom" secondItem="FXf-gH-mQk" secondAttribute="bottom" id="bFi-oB-zl1"/>
+                <constraint firstAttribute="trailingMargin" secondItem="PRA-mk-Ub7" secondAttribute="trailing" id="bVW-Nw-jBE"/>
+                <constraint firstItem="eqF-dO-mvX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mye-hZ-Our"/>
+                <constraint firstItem="eao-Ke-ctz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sRD-Q3-Kur"/>
+                <constraint firstItem="FXf-gH-mQk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="uZR-ha-UNb"/>
+                <constraint firstItem="FXf-gH-mQk" firstAttribute="leading" secondItem="eqF-dO-mvX" secondAttribute="trailing" id="x2G-Ou-Lj2"/>
+                <constraint firstItem="eao-Ke-ctz" firstAttribute="height" secondItem="eqF-dO-mvX" secondAttribute="height" id="zaq-F3-zyA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_camera" width="28" height="20"/>
+        <image name="icon_image" width="26" height="17"/>
+    </resources>
+</document>

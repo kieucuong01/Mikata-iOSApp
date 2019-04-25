@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuMyPageCell" id="68p-cj-V07" customClass="MenuMyPageCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jF-pl-0MJ">
+                        <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-Xn-kZG">
+                                <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-Dd-6Y2">
+                                <rect key="frame" x="17" y="60" width="68" height="30"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ogh-Xn-kZG" firstAttribute="height" secondItem="1jF-pl-0MJ" secondAttribute="height" id="4Gx-U9-LWE"/>
+                            <constraint firstItem="Gcg-Dd-6Y2" firstAttribute="height" secondItem="ogh-Xn-kZG" secondAttribute="height" multiplier="30:102" id="H7t-xX-HWr"/>
+                            <constraint firstItem="Gcg-Dd-6Y2" firstAttribute="top" secondItem="1jF-pl-0MJ" secondAttribute="top" constant="60" id="NKO-e7-TUs"/>
+                            <constraint firstItem="ogh-Xn-kZG" firstAttribute="centerX" secondItem="1jF-pl-0MJ" secondAttribute="centerX" id="QdA-3J-sEc"/>
+                            <constraint firstItem="ogh-Xn-kZG" firstAttribute="width" secondItem="1jF-pl-0MJ" secondAttribute="width" id="RWA-cg-tdH"/>
+                            <constraint firstItem="ogh-Xn-kZG" firstAttribute="centerY" secondItem="1jF-pl-0MJ" secondAttribute="centerY" id="RZG-qV-sD2"/>
+                            <constraint firstItem="Gcg-Dd-6Y2" firstAttribute="centerX" secondItem="ogh-Xn-kZG" secondAttribute="centerX" id="ZUF-uW-cyX"/>
+                            <constraint firstItem="Gcg-Dd-6Y2" firstAttribute="width" secondItem="ogh-Xn-kZG" secondAttribute="width" multiplier="2:3" id="nBF-KG-1TK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1jF-pl-0MJ" secondAttribute="trailing" id="1wk-WL-fxB"/>
+                <constraint firstAttribute="bottom" secondItem="1jF-pl-0MJ" secondAttribute="bottom" id="5nZ-Mk-EZN"/>
+                <constraint firstItem="1jF-pl-0MJ" firstAttribute="top" secondItem="68p-cj-V07" secondAttribute="top" id="YCA-J0-xRm"/>
+                <constraint firstItem="1jF-pl-0MJ" firstAttribute="leading" secondItem="68p-cj-V07" secondAttribute="leading" id="zdh-KE-oWD"/>
+            </constraints>
+            <connections>
+                <outlet property="mConstraintTopLabel" destination="NKO-e7-TUs" id="Y1C-Kj-pjZ"/>
+                <outlet property="mImageMenu" destination="ogh-Xn-kZG" id="f1T-DA-8bh"/>
+                <outlet property="mLabelmenu" destination="Gcg-Dd-6Y2" id="teQ-23-UOQ"/>
+            </connections>
+            <point key="canvasLocation" x="-222" y="-145"/>
+        </collectionViewCell>
+    </objects>
+</document>

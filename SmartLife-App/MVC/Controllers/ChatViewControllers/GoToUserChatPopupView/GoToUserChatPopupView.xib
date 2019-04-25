@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoToUserChatPopupView" customModule="SmartLife_App" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="gKC-Vf-eiE" id="hAi-Kh-2Jw"/>
+                <outlet property="containerView" destination="Fcl-Se-gyv" id="e0j-FT-wnJ"/>
+                <outlet property="goToUserChatlButton" destination="Lf8-kh-4Z9" id="ZnI-If-O9W"/>
+                <outlet property="mainView" destination="Kkb-rB-Zgh" id="Cyc-b5-44O"/>
+                <outlet property="nameLabel" destination="soQ-ia-eda" id="nPw-Oh-Zjg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleAspectFill" id="Kkb-rB-Zgh" userLabel="MainView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYt-vz-16i" userLabel="CancelButton">
+                    <rect key="frame" x="-0.5" y="-0.5" width="375.5" height="667.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="bcT-UM-qiB"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fcl-Se-gyv" userLabel="ContainerView">
+                    <rect key="frame" x="24.5" y="187" width="326" height="293"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-m6-YOp" userLabel="BackButton">
+                            <rect key="frame" x="279.5" y="0.0" width="46.5" height="46.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="v2g-m6-YOp" secondAttribute="height" id="j81-B0-fH7"/>
+                            </constraints>
+                            <state key="normal" image="icon_close_brown"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="RBu-FN-hlG"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKC-Vf-eiE" userLabel="AvatarImageView">
+                            <rect key="frame" x="113.5" y="46.5" width="98" height="98"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gKC-Vf-eiE" secondAttribute="height" id="LjW-C1-Doi"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-ia-eda" userLabel="NameLabel">
+                            <rect key="frame" x="16" y="154.5" width="293" height="21.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-og-k6z" userLabel="ButtonView">
+                            <rect key="frame" x="-0.5" y="183" width="326" height="110"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf8-kh-4Z9" userLabel="GoToUserChatlButton" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                                    <rect key="frame" x="33" y="29.5" width="260" height="50"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <state key="normal" title="メッセージを送る">
+                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="goToUserChatlButtonAction:" destination="-1" eventType="touchUpInside" id="BVW-uP-2cV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Lf8-kh-4Z9" firstAttribute="centerY" secondItem="jRo-og-k6z" secondAttribute="centerY" id="7LY-vz-muC"/>
+                                <constraint firstItem="Lf8-kh-4Z9" firstAttribute="centerX" secondItem="jRo-og-k6z" secondAttribute="centerX" id="H1N-IT-55Y"/>
+                                <constraint firstItem="Lf8-kh-4Z9" firstAttribute="height" secondItem="jRo-og-k6z" secondAttribute="height" multiplier="50:110" id="HT4-hs-hJZ"/>
+                                <constraint firstAttribute="width" secondItem="jRo-og-k6z" secondAttribute="height" multiplier="326:110" id="VnD-0G-0dB"/>
+                                <constraint firstItem="Lf8-kh-4Z9" firstAttribute="width" secondItem="jRo-og-k6z" secondAttribute="width" multiplier="260:326" id="gGo-wo-i6T"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="soQ-ia-eda" firstAttribute="centerX" secondItem="Fcl-Se-gyv" secondAttribute="centerX" id="08V-65-okX"/>
+                        <constraint firstItem="gKC-Vf-eiE" firstAttribute="width" secondItem="Fcl-Se-gyv" secondAttribute="width" multiplier="0.3" id="ANP-8d-bgl"/>
+                        <constraint firstItem="soQ-ia-eda" firstAttribute="width" secondItem="Fcl-Se-gyv" secondAttribute="width" multiplier="9:10" id="DHJ-ZH-G6D"/>
+                        <constraint firstItem="gKC-Vf-eiE" firstAttribute="centerX" secondItem="Fcl-Se-gyv" secondAttribute="centerX" id="LEf-Vx-e0U"/>
+                        <constraint firstItem="v2g-m6-YOp" firstAttribute="top" secondItem="Fcl-Se-gyv" secondAttribute="top" id="NR4-0A-r7f"/>
+                        <constraint firstAttribute="width" secondItem="Fcl-Se-gyv" secondAttribute="height" multiplier="10:9" id="NUc-79-IcS"/>
+                        <constraint firstItem="soQ-ia-eda" firstAttribute="top" secondItem="gKC-Vf-eiE" secondAttribute="bottom" constant="10" id="aAr-mf-x5R"/>
+                        <constraint firstItem="jRo-og-k6z" firstAttribute="width" secondItem="Fcl-Se-gyv" secondAttribute="width" id="d5L-H5-eRf"/>
+                        <constraint firstItem="jRo-og-k6z" firstAttribute="centerX" secondItem="Fcl-Se-gyv" secondAttribute="centerX" id="egy-XI-N7b"/>
+                        <constraint firstItem="v2g-m6-YOp" firstAttribute="width" secondItem="Fcl-Se-gyv" secondAttribute="width" multiplier="1:7" id="ndY-1U-HOi"/>
+                        <constraint firstItem="gKC-Vf-eiE" firstAttribute="top" secondItem="v2g-m6-YOp" secondAttribute="bottom" id="qht-dG-Z4O"/>
+                        <constraint firstItem="jRo-og-k6z" firstAttribute="bottom" secondItem="Fcl-Se-gyv" secondAttribute="bottom" id="ubH-cB-NJw"/>
+                        <constraint firstItem="v2g-m6-YOp" firstAttribute="trailing" secondItem="Fcl-Se-gyv" secondAttribute="trailing" id="zv6-gR-wxN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.55000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fcl-Se-gyv" firstAttribute="centerX" secondItem="Kkb-rB-Zgh" secondAttribute="centerX" id="1Zr-xP-Pwk"/>
+                <constraint firstItem="DYt-vz-16i" firstAttribute="centerY" secondItem="Kkb-rB-Zgh" secondAttribute="centerY" id="7VY-EG-SOM"/>
+                <constraint firstItem="DYt-vz-16i" firstAttribute="width" secondItem="Kkb-rB-Zgh" secondAttribute="width" id="HZR-QM-MwJ"/>
+                <constraint firstItem="DYt-vz-16i" firstAttribute="centerX" secondItem="Kkb-rB-Zgh" secondAttribute="centerX" id="ZEq-nU-ipK"/>
+                <constraint firstItem="Fcl-Se-gyv" firstAttribute="width" secondItem="Kkb-rB-Zgh" secondAttribute="width" multiplier="326:375" id="fjG-uc-mQa"/>
+                <constraint firstItem="DYt-vz-16i" firstAttribute="height" secondItem="Kkb-rB-Zgh" secondAttribute="height" id="fr4-Z3-4Uv"/>
+                <constraint firstItem="Fcl-Se-gyv" firstAttribute="centerY" secondItem="Kkb-rB-Zgh" secondAttribute="centerY" id="fux-WT-udB"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close_brown" width="50" height="50"/>
+    </resources>
+</document>

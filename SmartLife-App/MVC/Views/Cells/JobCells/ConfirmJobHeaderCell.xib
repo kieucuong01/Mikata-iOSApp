@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="confirmJobHeaderCell" id="KGk-i7-Jjw" customClass="ConfirmJobHeaderCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="172"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="171.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrp-rP-vNT">
+                        <rect key="frame" x="276" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rrp-rP-vNT" secondAttribute="height" id="xy8-eY-51U"/>
+                        </constraints>
+                        <state key="normal" image="icon_close_brown"/>
+                        <connections>
+                            <action selector="clickedButtonClose:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5jB-iz-Wnw"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXM-0i-CVb">
+                        <rect key="frame" x="85" y="42" width="157.5" height="35.5"/>
+                        <string key="text">こちらで送信します。
+よろしいですか？</string>
+                        <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="応募内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAq-Sf-Q54">
+                        <rect key="frame" x="123" y="130.5" width="80" height="29"/>
+                        <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="20"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FAq-Sf-Q54" firstAttribute="top" secondItem="vXM-0i-CVb" secondAttribute="bottom" constant="53" id="EYT-Jy-xRa"/>
+                    <constraint firstAttribute="bottom" secondItem="FAq-Sf-Q54" secondAttribute="bottom" constant="12" id="Id5-ci-yCd"/>
+                    <constraint firstItem="vXM-0i-CVb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="JAO-Ix-Nis"/>
+                    <constraint firstItem="rrp-rP-vNT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ORX-pp-4Kp"/>
+                    <constraint firstItem="rrp-rP-vNT" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="50:326" id="YQX-G7-Iu3"/>
+                    <constraint firstAttribute="trailing" secondItem="rrp-rP-vNT" secondAttribute="trailing" id="gc0-Nc-qel"/>
+                    <constraint firstItem="FAq-Sf-Q54" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lcs-YJ-TO5"/>
+                    <constraint firstItem="vXM-0i-CVb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="42" id="oLJ-aZ-AxK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBottomConstraintLabelHeader" destination="Id5-ci-yCd" id="vi8-8H-KbS"/>
+                <outlet property="mLabelHeader" destination="FAq-Sf-Q54" id="SDL-8p-cGL"/>
+                <outlet property="mLabelTitle" destination="vXM-0i-CVb" id="O8F-LX-tJO"/>
+                <outlet property="mTopConstraintLabelHeader" destination="EYT-Jy-xRa" id="dx7-J3-c1D"/>
+                <outlet property="mTopConstraintLabelTitle" destination="oLJ-aZ-AxK" id="EbN-vQ-6Bx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_close_brown" width="50" height="50"/>
+    </resources>
+</document>

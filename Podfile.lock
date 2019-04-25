@@ -1,0 +1,232 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - AXPhotoViewer (1.3.0):
+    - AXPhotoViewer/Lite (= 1.3.0)
+  - AXPhotoViewer/Core (1.3.0):
+    - AXStateButton (>= 1.1.3)
+    - FLAnimatedImage (>= 1.0.0)
+  - AXPhotoViewer/Lite (1.3.0):
+    - AXPhotoViewer/Core
+  - AXStateButton (1.1.4)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - Fabric (1.7.9)
+  - Firebase/AdMob (5.5.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.31.0)
+  - Firebase/Auth (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.3)
+  - Firebase/Core (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.1.0)
+  - Firebase/CoreOnly (5.5.0):
+    - FirebaseCore (= 5.1.0)
+  - Firebase/Crash (5.5.0):
+    - Firebase/Core
+    - FirebaseCrash (= 3.1.0)
+  - Firebase/Database (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.2)
+  - Firebase/Messaging (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.1.0)
+  - Firebase/RemoteConfig (5.5.0):
+    - Firebase/Core
+    - FirebaseRemoteConfig (= 3.0.1)
+  - Firebase/Storage (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (= 3.0.0)
+  - FirebaseABTesting (2.0.0):
+    - FirebaseCore (~> 5.0)
+    - Protobuf (~> 3.5)
+  - FirebaseAnalytics (5.1.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (5.0.3):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 5.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (5.1.0):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseCrash (3.1.0):
+    - FirebaseAnalytics (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - Protobuf (~> 3.5)
+  - FirebaseDatabase (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FirebaseInstanceID (3.2.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+  - FirebaseMessaging (3.1.0):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Reachability (~> 5.2)
+    - Protobuf (~> 3.1)
+  - FirebaseRemoteConfig (3.0.1):
+    - FirebaseABTesting (~> 2.0)
+    - FirebaseAnalytics (~> 5.1)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleUtilities/Environment (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - Protobuf (~> 3.5)
+  - FirebaseStorage (3.0.0):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FLAnimatedImage (1.0.12)
+  - Google-Mobile-Ads-SDK (7.31.0)
+  - GoogleAppMeasurement (5.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleUtilities/AppDelegateSwizzler (5.2.1):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.2.1)
+  - GoogleUtilities/Logger (5.2.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.2.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.2.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.2.1)"
+  - GoogleUtilities/Reachability (5.2.1):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.0)
+  - ICSPullToRefresh (0.6)
+  - leveldb-library (1.20)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - ObjectMapper (2.2.9)
+  - Protobuf (3.6.0)
+  - PullToRefresher (3.0.2)
+  - Repro (2.12.2)
+  - SnapKit (3.2.0)
+  - TPKeyboardAvoiding (1.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.1)
+  - AlamofireObjectMapper (~> 4.0)
+  - AXPhotoViewer (= 1.3)
+  - Crashlytics
+  - Fabric
+  - Firebase/AdMob
+  - Firebase/Auth
+  - Firebase/Core
+  - Firebase/Crash
+  - Firebase/Database
+  - Firebase/Messaging
+  - Firebase/RemoteConfig
+  - Firebase/Storage
+  - ICSPullToRefresh
+  - PullToRefresher
+  - Repro
+  - SnapKit (~> 3.2.0)
+  - TPKeyboardAvoiding
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireObjectMapper
+    - AXPhotoViewer
+    - AXStateButton
+    - Crashlytics
+    - Fabric
+    - Firebase
+    - FirebaseABTesting
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCrash
+    - FirebaseDatabase
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FirebaseRemoteConfig
+    - FirebaseStorage
+    - FLAnimatedImage
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - ICSPullToRefresh
+    - leveldb-library
+    - nanopb
+    - ObjectMapper
+    - Protobuf
+    - PullToRefresher
+    - Repro
+    - SnapKit
+    - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  AXPhotoViewer: 4d7734e7a34e652cac25b7c348f303cfbf65524c
+  AXStateButton: 6c515a433e37551505046429b5be04c12daa8c07
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
+  FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
+  FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
+  FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
+  FirebaseCrash: 5e4a61afd8d32cef37875c757602c00f6d1b8bc2
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
+  FirebaseInstanceID: 8cd2c6cfe7b9ab65ce7e248f6da7f26f6775b9be
+  FirebaseMessaging: f67b3719f520ee200da0e20ce577fe2bce0c01d0
+  FirebaseRemoteConfig: 7b6d675dfb11f0e0e638caee00908b06af150d56
+  FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
+  GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GoogleUtilities: 8d9fa00248c475b606fd20b562242060a20117a2
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  ICSPullToRefresh: a64f102c6558cc34270ea60e99df7c91d1f3d2c0
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
+  PullToRefresher: 25a367871a70b1da0b28e8e7cecceb4ef04f5f56
+  Repro: eea2fa81b7515a7f7c2c2023f1267e5c8a208825
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+
+PODFILE CHECKSUM: c3acba83c8df3e28b7cdf3a3b76bbee919dad614
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertGetPointView" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdf-ha-odm">
+                    <rect key="frame" x="24.5" y="158.5" width="326" height="350"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL8-54-BXu">
+                            <rect key="frame" x="261" y="15" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="TL8-54-BXu" secondAttribute="height" id="bMf-Oa-r0H"/>
+                            </constraints>
+                            <state key="normal" image="icon_close_brown"/>
+                            <connections>
+                                <action selector="clickButtonCloseBrown:" destination="iN0-l3-epB" eventType="touchUpInside" id="sX9-xz-FoR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6S-de-CDs">
+                            <rect key="frame" x="67" y="98" width="192" height="22"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="19.799999237060547"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6y-JR-lRL" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="32.5" y="255" width="260" height="50"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="ポイント獲得へ">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickButtonCloseBrown:" destination="iN0-l3-epB" eventType="touchUpInside" id="jbc-S5-CqE"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarL" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-hO-vRn">
+                            <rect key="frame" x="40" y="76" width="27" height="82"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconStarR" translatesAutoresizingMaskIntoConstraints="NO" id="vXu-Lz-mD9">
+                            <rect key="frame" x="259" y="76" width="27" height="82"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconRibon" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-6b-nHy">
+                            <rect key="frame" x="48" y="165" width="231" height="48"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lc-Lm-bEB">
+                            <rect key="frame" x="130" y="168" width="52" height="33.5"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lv-JC-0eB">
+                            <rect key="frame" x="183" y="175" width="20" height="22.5"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイントを獲得しました！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIn-6x-qQa">
+                            <rect key="frame" x="77" y="135" width="172" height="15"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="12.800000190734863"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sIn-6x-qQa" firstAttribute="leading" secondItem="zsh-hO-vRn" secondAttribute="trailing" constant="10" id="6FM-Lx-hVm"/>
+                        <constraint firstItem="cjk-6b-nHy" firstAttribute="top" secondItem="sIn-6x-qQa" secondAttribute="bottom" constant="15" id="8F7-pJ-79Z"/>
+                        <constraint firstItem="zsh-hO-vRn" firstAttribute="leading" secondItem="mdf-ha-odm" secondAttribute="leading" constant="40" id="8Qp-DG-WdA"/>
+                        <constraint firstItem="4lv-JC-0eB" firstAttribute="top" secondItem="sIn-6x-qQa" secondAttribute="bottom" constant="25" id="Ba7-VR-U1H"/>
+                        <constraint firstItem="vXu-Lz-mD9" firstAttribute="top" secondItem="mdf-ha-odm" secondAttribute="top" constant="76" id="CO3-0D-3Kw"/>
+                        <constraint firstItem="cjk-6b-nHy" firstAttribute="centerX" secondItem="mdf-ha-odm" secondAttribute="centerX" id="EFH-41-l15"/>
+                        <constraint firstItem="b6y-JR-lRL" firstAttribute="top" secondItem="cjk-6b-nHy" secondAttribute="bottom" constant="42" id="LUv-Bl-X1T"/>
+                        <constraint firstItem="vXu-Lz-mD9" firstAttribute="leading" secondItem="K6S-de-CDs" secondAttribute="trailing" id="QMy-Zf-QBT"/>
+                        <constraint firstItem="3Lc-Lm-bEB" firstAttribute="centerX" secondItem="cjk-6b-nHy" secondAttribute="centerX" multiplier="0.95" id="TnO-mR-oeL"/>
+                        <constraint firstItem="sIn-6x-qQa" firstAttribute="top" secondItem="K6S-de-CDs" secondAttribute="bottom" constant="15" id="ZfM-j0-w5F"/>
+                        <constraint firstItem="K6S-de-CDs" firstAttribute="top" secondItem="mdf-ha-odm" secondAttribute="top" constant="98" id="aKX-l1-If8"/>
+                        <constraint firstItem="zsh-hO-vRn" firstAttribute="top" secondItem="mdf-ha-odm" secondAttribute="top" constant="76" id="ezo-WU-7eV"/>
+                        <constraint firstItem="3Lc-Lm-bEB" firstAttribute="top" secondItem="sIn-6x-qQa" secondAttribute="bottom" constant="18" id="f0V-39-GFP"/>
+                        <constraint firstItem="4lv-JC-0eB" firstAttribute="leading" secondItem="3Lc-Lm-bEB" secondAttribute="trailing" constant="1" id="fbM-za-Uby"/>
+                        <constraint firstItem="TL8-54-BXu" firstAttribute="top" secondItem="mdf-ha-odm" secondAttribute="top" constant="15" id="fvX-S9-OYS"/>
+                        <constraint firstItem="vXu-Lz-mD9" firstAttribute="width" secondItem="zsh-hO-vRn" secondAttribute="width" id="ghU-WE-sAV"/>
+                        <constraint firstAttribute="trailing" secondItem="vXu-Lz-mD9" secondAttribute="trailing" constant="40" id="mxG-hX-KN2"/>
+                        <constraint firstItem="vXu-Lz-mD9" firstAttribute="leading" secondItem="sIn-6x-qQa" secondAttribute="trailing" constant="10" id="oRX-VW-GFB"/>
+                        <constraint firstAttribute="trailing" secondItem="TL8-54-BXu" secondAttribute="trailing" constant="15" id="qiE-6m-9Zk"/>
+                        <constraint firstItem="K6S-de-CDs" firstAttribute="leading" secondItem="zsh-hO-vRn" secondAttribute="trailing" id="xAr-vq-Xs9"/>
+                        <constraint firstItem="vXu-Lz-mD9" firstAttribute="height" secondItem="zsh-hO-vRn" secondAttribute="height" id="xPQ-Ls-j1s"/>
+                        <constraint firstItem="b6y-JR-lRL" firstAttribute="centerX" secondItem="mdf-ha-odm" secondAttribute="centerX" id="xhN-gH-Oaz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cjk-6b-nHy" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="48:667" id="EcR-22-X9n"/>
+                <constraint firstItem="mdf-ha-odm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="326:375" id="Iyb-5Z-aMW"/>
+                <constraint firstItem="zsh-hO-vRn" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="82:667" id="JLn-9h-eRs"/>
+                <constraint firstItem="b6y-JR-lRL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="260:375" id="USz-9g-oJ5"/>
+                <constraint firstItem="cjk-6b-nHy" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="231:375" id="XRv-gv-D9L"/>
+                <constraint firstItem="mdf-ha-odm" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="350:667" id="aTX-pb-J5S"/>
+                <constraint firstItem="mdf-ha-odm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l4g-27-HhS"/>
+                <constraint firstItem="zsh-hO-vRn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="27:375" id="nBS-Cn-vq4"/>
+                <constraint firstItem="b6y-JR-lRL" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="50:667" id="qSj-Yd-RyL"/>
+                <constraint firstItem="mdf-ha-odm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qdP-D9-8YN"/>
+            </constraints>
+            <connections>
+                <outlet property="mButtonClose" destination="TL8-54-BXu" id="X7e-4g-PPQ"/>
+                <outlet property="mButtonClosePink" destination="b6y-JR-lRL" id="eoR-7q-3Mz"/>
+                <outlet property="mLabelDescription" destination="sIn-6x-qQa" id="eF9-mq-T3l"/>
+                <outlet property="mLabelTitle" destination="K6S-de-CDs" id="hdG-4E-xbU"/>
+                <outlet property="point" destination="3Lc-Lm-bEB" id="ivY-kc-YlV"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconRibon" width="231" height="48"/>
+        <image name="iconStarL" width="27" height="82"/>
+        <image name="iconStarR" width="28" height="82"/>
+        <image name="icon_close_brown" width="50" height="50"/>
+    </resources>
+</document>

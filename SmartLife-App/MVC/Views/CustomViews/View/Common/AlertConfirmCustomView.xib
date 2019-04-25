@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertConfirmCustomView" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5s-o8-bDU">
+                    <rect key="frame" x="40" y="200" width="295" height="173"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="削除しました" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DK-gL-odg">
+                            <rect key="frame" x="99.5" y="44" width="96" height="18"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDT-WE-eVZ" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="47" y="90" width="201" height="50"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="自分の投稿へ">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedButtonSuccess:" destination="iN0-l3-epB" eventType="touchUpInside" id="CpV-ZR-GEt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="DDT-WE-eVZ" secondAttribute="bottom" constant="33" id="Hxg-sg-KkN"/>
+                        <constraint firstItem="3DK-gL-odg" firstAttribute="top" secondItem="q5s-o8-bDU" secondAttribute="top" constant="44" id="hc4-fR-yrR"/>
+                        <constraint firstItem="DDT-WE-eVZ" firstAttribute="centerX" secondItem="q5s-o8-bDU" secondAttribute="centerX" id="uTj-hB-VCu"/>
+                        <constraint firstItem="3DK-gL-odg" firstAttribute="centerX" secondItem="q5s-o8-bDU" secondAttribute="centerX" id="wcm-y0-N9u"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udI-EN-4DE">
+                    <rect key="frame" x="25" y="200" width="325" height="195"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFH-NM-V62">
+                            <rect key="frame" x="99" y="49" width="128" height="35.5"/>
+                            <string key="text">削除します。
+よろしいですか？</string>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o9-47-hhQ" customClass="UIBorderButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="32.5" y="112" width="125" height="50"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="キャンセル"/>
+                            <connections>
+                                <action selector="clickedButtonDeclined:" destination="iN0-l3-epB" eventType="touchUpInside" id="MJZ-Yx-fP2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLf-lI-j6e" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="167.5" y="112" width="125" height="50"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="clickedButtonAccept:" destination="iN0-l3-epB" eventType="touchUpInside" id="xmA-tf-vMe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="tLf-lI-j6e" firstAttribute="width" secondItem="1o9-47-hhQ" secondAttribute="width" id="FYy-oO-ZjA"/>
+                        <constraint firstItem="tLf-lI-j6e" firstAttribute="centerY" secondItem="1o9-47-hhQ" secondAttribute="centerY" id="LcQ-3l-zY4"/>
+                        <constraint firstItem="XFH-NM-V62" firstAttribute="centerX" secondItem="udI-EN-4DE" secondAttribute="centerX" id="bpd-t0-1U1"/>
+                        <constraint firstAttribute="bottom" secondItem="1o9-47-hhQ" secondAttribute="bottom" constant="33" id="f4m-ZY-va6"/>
+                        <constraint firstItem="1o9-47-hhQ" firstAttribute="trailing" secondItem="udI-EN-4DE" secondAttribute="centerX" constant="-5" id="hQf-aZ-A1s"/>
+                        <constraint firstItem="tLf-lI-j6e" firstAttribute="leading" secondItem="1o9-47-hhQ" secondAttribute="trailing" constant="10" id="nda-9e-9xc"/>
+                        <constraint firstItem="XFH-NM-V62" firstAttribute="top" secondItem="udI-EN-4DE" secondAttribute="top" constant="49" id="rQS-WG-PNo"/>
+                        <constraint firstItem="tLf-lI-j6e" firstAttribute="height" secondItem="1o9-47-hhQ" secondAttribute="height" id="ySi-it-927"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.72999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="udI-EN-4DE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="4EN-MO-Dn5"/>
+                <constraint firstItem="q5s-o8-bDU" firstAttribute="top" secondItem="udI-EN-4DE" secondAttribute="top" id="8xM-iN-fSX"/>
+                <constraint firstItem="DDT-WE-eVZ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="201:375" id="OmL-aq-UVY"/>
+                <constraint firstItem="udI-EN-4DE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="S12-xM-lkH"/>
+                <constraint firstItem="udI-EN-4DE" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="195:375" id="SNZ-3d-Dfw"/>
+                <constraint firstItem="q5s-o8-bDU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="173:375" id="WXb-GM-xfA"/>
+                <constraint firstItem="DDT-WE-eVZ" firstAttribute="height" secondItem="tLf-lI-j6e" secondAttribute="height" id="Wnc-Hl-dIG"/>
+                <constraint firstItem="q5s-o8-bDU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="295:375" id="YkX-aL-2Tx"/>
+                <constraint firstItem="udI-EN-4DE" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="325:375" id="pg7-9B-x99"/>
+                <constraint firstItem="1o9-47-hhQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="125:375" id="xFY-55-dOV"/>
+                <constraint firstItem="q5s-o8-bDU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xey-XY-xoL"/>
+                <constraint firstItem="1o9-47-hhQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="50:375" id="zE0-kI-DRR"/>
+            </constraints>
+            <connections>
+                <outlet property="mBottomConstraintButtonSuccess" destination="Hxg-sg-KkN" id="q5e-T8-pRb"/>
+                <outlet property="mBottomConstraintLabelConfirmTitle" destination="f4m-ZY-va6" id="rBK-eB-hvj"/>
+                <outlet property="mButtonAccept" destination="tLf-lI-j6e" id="Bf4-C0-Nk9"/>
+                <outlet property="mButtonDecline" destination="1o9-47-hhQ" id="BgJ-lq-NWd"/>
+                <outlet property="mButtonSuccess" destination="DDT-WE-eVZ" id="GG8-Kg-MoN"/>
+                <outlet property="mConfirmView" destination="udI-EN-4DE" id="IqM-iN-Gwq"/>
+                <outlet property="mLabelConfirmTitle" destination="XFH-NM-V62" id="wOA-BS-VC8"/>
+                <outlet property="mLabelSuccessView" destination="3DK-gL-odg" id="Jeb-m8-8Lz"/>
+                <outlet property="mSuccessView" destination="q5s-o8-bDU" id="QZj-8a-gN6"/>
+                <outlet property="mTopConstraintConfirmView" destination="4EN-MO-Dn5" id="yRw-to-bA6"/>
+                <outlet property="mTopConstraintLabelConfirmTitle" destination="rQS-WG-PNo" id="QgZ-3v-XNU"/>
+                <outlet property="mTopConstraintLabelSuccess" destination="hc4-fR-yrR" id="k2E-mz-jpe"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

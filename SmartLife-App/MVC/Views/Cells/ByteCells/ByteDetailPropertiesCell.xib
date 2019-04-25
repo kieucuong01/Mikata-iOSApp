@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w6.otf">
+            <string>HiraKakuPro-W6</string>
+        </array>
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="byteDetailPropertiesCell" rowHeight="137" id="KGk-i7-Jjw" customClass="ByteDetailPropertiesCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKG-0T-qEU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="136.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJv-Tc-hmf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="22"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼ 募集PR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8c-hb-0qt">
+                                        <rect key="frame" x="16" y="5" width="63" height="13"/>
+                                        <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="l8c-hb-0qt" firstAttribute="centerY" secondItem="xJv-Tc-hmf" secondAttribute="centerY" id="H8m-zn-pXz"/>
+                                    <constraint firstItem="l8c-hb-0qt" firstAttribute="leading" secondItem="xJv-Tc-hmf" secondAttribute="leading" constant="16" id="Vji-dW-fWh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 時給2500円～！ドリンク手当ては1杯500円♪お仕事も超簡単☆ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4C-22-FDm">
+                                <rect key="frame" x="16" y="30" width="388" height="14.5"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
+                                <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★未経験者さんも大歓迎★ メインのお仕事はママさんのお手伝い！ お仕事の流れは丁寧に教えますよ↑↑ お仕事の流れは丁寧に教えますよ↑↑お仕事の流れは丁寧に教えますよ↑↑ →なんて心配はありません♪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjb-Vy-xuM">
+                                <rect key="frame" x="16" y="52" width="388" height="39"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="13"/>
+                                <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hn-4v-FK8">
+                                <rect key="frame" x="16" y="89" width="388" height="5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="T9K-De-EU0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Hn-4v-FK8" firstAttribute="leading" secondItem="Tjb-Vy-xuM" secondAttribute="leading" id="0RI-U9-wpk"/>
+                            <constraint firstItem="e4C-22-FDm" firstAttribute="leading" secondItem="l8c-hb-0qt" secondAttribute="leading" id="90I-ef-zWJ"/>
+                            <constraint firstItem="Tjb-Vy-xuM" firstAttribute="leading" secondItem="e4C-22-FDm" secondAttribute="leading" id="E1w-zD-Py7"/>
+                            <constraint firstItem="3Hn-4v-FK8" firstAttribute="top" secondItem="Tjb-Vy-xuM" secondAttribute="bottom" constant="-2" id="F2E-XA-Lru"/>
+                            <constraint firstItem="e4C-22-FDm" firstAttribute="top" secondItem="xJv-Tc-hmf" secondAttribute="bottom" constant="8" id="J71-HQ-FRr"/>
+                            <constraint firstItem="Tjb-Vy-xuM" firstAttribute="top" secondItem="e4C-22-FDm" secondAttribute="bottom" constant="7.5" id="Tcq-qC-iXX"/>
+                            <constraint firstItem="Tjb-Vy-xuM" firstAttribute="trailing" secondItem="e4C-22-FDm" secondAttribute="trailing" id="Zmu-xh-AXL"/>
+                            <constraint firstItem="3Hn-4v-FK8" firstAttribute="trailing" secondItem="Tjb-Vy-xuM" secondAttribute="trailing" id="cuO-Vj-HRs"/>
+                            <constraint firstAttribute="bottom" secondItem="Tjb-Vy-xuM" secondAttribute="bottom" constant="45.5" id="e5S-16-1WE"/>
+                            <constraint firstItem="xJv-Tc-hmf" firstAttribute="width" secondItem="OKG-0T-qEU" secondAttribute="width" id="fGB-L8-pab"/>
+                            <constraint firstItem="xJv-Tc-hmf" firstAttribute="height" secondItem="OKG-0T-qEU" secondAttribute="width" multiplier="22:414" id="jIp-xb-Xae"/>
+                            <constraint firstItem="xJv-Tc-hmf" firstAttribute="top" secondItem="OKG-0T-qEU" secondAttribute="top" id="pXS-VC-a6G"/>
+                            <constraint firstItem="e4C-22-FDm" firstAttribute="width" secondItem="OKG-0T-qEU" secondAttribute="width" multiplier="15:16" id="wFo-Q1-rO7"/>
+                            <constraint firstItem="xJv-Tc-hmf" firstAttribute="centerX" secondItem="OKG-0T-qEU" secondAttribute="centerX" id="xdt-JR-tEj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OKG-0T-qEU" secondAttribute="bottom" id="V53-Ci-S92"/>
+                    <constraint firstItem="OKG-0T-qEU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gUw-Uu-3Zc"/>
+                    <constraint firstItem="OKG-0T-qEU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lmg-nB-QuM"/>
+                    <constraint firstAttribute="trailing" secondItem="OKG-0T-qEU" secondAttribute="trailing" id="qSo-eL-o1J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mLabelConstant" destination="Tjb-Vy-xuM" id="WCQ-9g-Aex"/>
+                <outlet property="mLabelTitle" destination="e4C-22-FDm" id="HDH-oO-TjY"/>
+                <outlet property="mLeadingLabelTitle" destination="Vji-dW-fWh" id="jhC-hU-pLz"/>
+                <outlet property="mTopLabelContent" destination="J71-HQ-FRr" id="IIe-Ng-38B"/>
+                <outlet property="mTopLabelTitle" destination="Tcq-qC-iXX" id="6b9-At-Nmc"/>
+                <outlet property="mViewShadow" destination="3Hn-4v-FK8" id="SoJ-Fk-h4g"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="127.5"/>
+        </tableViewCell>
+    </objects>
+</document>

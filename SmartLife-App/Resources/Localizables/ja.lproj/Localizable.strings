@@ -1,0 +1,468 @@
+/*
+ Localizable.strings
+ SmartLife-App
+
+ Created by thanhlt on 8/18/17.
+ Copyright © 2017 thanhlt. All rights reserved.
+ */
+"please_turn_on_bluetooth" = "この機能を使うため、bluetoothを有効にしてください";
+"no_permission_unlock_door" = "鍵と接続できないため、もう一度試してください。\n接続できない場合は、お問合せください。";
+"expire_permission_unlock_door" = "管理者にカギの有効期間をご確認ください";
+// MARK: - Navbar and Tabbar
+"tabbar_consultation_button" = "就活相談・その他";
+"tabbar_home_button" = "お家のこと";
+"tabbar_label_timeline" = "ホーム";
+"tabbar_label_chat" = "メッセージ";
+"tabbar_label_notification" = "お知らせ";
+"tabbar_label_mypage" = "マイページ";
+"tabbar_label_popup"  = "チャット";
+
+//MARK: - UIButton
+"note_screen_button_title_all_list" = "すべて";
+"note_screen_button_title_favorite" = "お気に入り";
+"note_screen_button_title_my_post" = "自分の投稿";
+
+//MARK: - Custom Alert View
+"alert_view_delete_note_label_confirm"      =   "削除します。\nよろしいですか？";
+"alert_view_delete_note_label_success"      =   "削除しました";
+"alert_view_delete_note_button_decline"     =   "キャンセル";
+"alert_view_delete_note_button_accept"      =   "OK";
+"alert_view_delete_note_button_success"     =   "自分の投稿へ";
+
+"alert_view_new_note_label_confirm"         =   "変更内容を破棄します。\nよろしいですか？";
+"alert_view_new_note_label_success"         =   "作成しました";
+"alert_view_new_note_button_decline"        =   "キャンセル";
+"alert_view_delete_note_button_accept"      =   "OK";
+"alert_view_new_note_button_success"        =   "ノート一覧へ";
+
+"alert_view_new_comment_label_confirm"         =   "変更内容を破棄します。\nよろしいですか？";
+"alert_view_new_comment_label_success"         =   "コメントしました";
+"alert_view_new_comment_button_decline"        =   "キャンセル";
+"alert_view_delete_comment_button_accept"      =   "OK";
+"alert_view_new_comment_button_success"        =   "ノート一覧へ";
+
+
+// MARK: - ChatViewController
+"Global_Hour_Format" = "hh:mm";
+"Global_Yesterday_String" = "Yesterday";
+"Global_Weekday_Format" = "E";
+"Global_DayInThisYear_Format" = "MMM dd";
+"Global_DayNotInThisYear_Format" = "MMM dd, yyyy";
+
+"ChatViewController_Title_Job" = "就活相談・その他";
+"ChatViewController_Title_Living" = "お家相談";
+"ChatViewController_Title_Building" = "";
+"ChatViewController_ChatTextField_Placeholder" = "メッセージを入力してください";
+"ChatViewController_SendButton_Text" = "送信";
+"ChatViewController_ActionSheet_CancelAction" = "キャンセル";
+"ChatViewController_ActionSheet_CameraAction" = "カメラ";
+"ChatViewController_ActionSheet_PhotoLibraryAction" = "写真ギャラリー";
+
+"ChatViewController_Default_Job_Message" = "あなたに合った最適なお仕事を、専任のキャリアアドバイザーと決めていけるから安心です♪\n転職・就職にお悩みの方、お気軽にご相談ください。\n(営業時間9：00−18：00)";
+"ChatViewController_Default_Living_Message" = "設備の故障など万が一のトラブルも安心。\nご質問やご要望の内容に合わせて専門スタッフが丁寧にご対応致します。\nお気軽にお問い合わせください。\n(営業時間9：00−18：00)\n\nよくある質問　もご参考下さい！";
+"ChatViewController_Default_Building_Message" = "コメントはありません。貴方がコメントを送ってみよう！";
+
+
+
+
+/*
+ **** Creator : CUONG KIEU
+ **** Description : Localize by Screen
+ ****
+ */
+
+// MARK: - LOGIN SCREEN
+"loginview_label_top"               = "";
+"loginview_label_email"             = "メールアドレス";
+"loginview_label_password"          = "パスワード";
+"loginview_label_forgetpassword"   = "パスワードを忘れた方はこちら";
+"loginview_button_login"            = "ログイン";
+"loginview_label_top_register"      = "まだアカウントをお持ちでない方";
+"loginview_button_register"         = "新規登録";
+"loginview_label_term"              = "登録することで、利用規約に同意したことになります";
+"loginview_label_navbar"            = "ログイン";
+
+// MARK: - REGISTER SCREEN
+"registerview_label_top"            = "新規登録";
+"registerview_label_code"           = "入居者専用パス";
+"registerview_placeholdertf_code"   = "賃貸契約時発行パスワード";
+"registerview_label_fullname"       = "氏名";
+"registerview_label_username"       = "ユーザー名";
+"registerview_label_email"          = "メールアドレス";
+"registerview_label_password"       = "パスワード";
+"registerview_placeholdertf_password" = "半角英数字8~20文字";
+"registerview_label_phonenumber"    = "電話番号";
+"registerview_label_birthday"       = "生年月日";
+"registerview_label_building"       = "建物名";
+"registerview_label_room"           = "部屋番号";
+"registerview_label_existaccount"   = "すでにアカウントをお持ちの方はこちら";
+"registerview_button_check"         = "確認する";
+
+// MARK: - LIST BUILDING SCREEN
+"listbuildingview_navigation_title" = "建物名選択";
+
+// MARK: - CHECK MY SKILL SCREEN
+"checkmyskillview_label_top"            = "スキルチェック";
+"checkmyskillview_button_next"          = "次へ";
+"checkmyskillview_button_back"          = "戻る";
+"checkmyskillview_button_done"          = "完了";
+"checkmyskillview_label_tip_checkskill" = "経験したことのある業務環境や\nツール、作業を選択して下さい";
+
+// MARK: - FORGET PASSWORD SCREEN
+"forgetpasswordview_navbar"             = "パスワード再発行";
+"forgetpasswordview_label_top"          = "ご登録のメールアドレスに\nパスワード再発行のリンクをお送りします。";
+"forgetpasswordview_label_email"        = "メールアドレス";
+"forgetpasswordview_label_confirm_email" = "確認のため\nもう一度入力";
+"forgetpasswordview_button_next"        = "送信";
+
+// MARK: - INPUT CODE FORGET SCREEN
+"inputcodeforgetview_label_notice"      = " \n に認証コードを送りしました。\n下記に入力し、次へを押してください";
+"inputcodeforgetview_label_sendcode"    = "認証コード";
+"inputcodeforgetview_button_next"       = "次へ";
+"inputcodeforgetview_label_contact"     = "メールが届かない場合はこちら\nからお問合せください";
+
+// MARK: - INPUT NEW PASSWORD SCREEN
+"inputnewpasswordview_label_request_newpass" = "新しいパスワードを入力してください";
+"inputnewpasswordview_label_newpass"    = "パスワード";
+"inputnewpasswordview_button_next"      = "送信";
+
+// MARK: - SETTING SCREEN
+"settingview_navbar"                  = "設定";
+"settingview_label_policy"            = "プライバシーポリシー";
+"settingview_label_FAQ"               = "よくある質問";
+"settingview_label_logout"            = "ログアウト";
+"settingview_label_termofuse"         = "利用規約";
+
+// MARK: - POINT PASSBOOK SCREEN
+"pointpassbookview_navbar" = "ポイント通帳";
+"pointpassbookview_label_tipleft" = "現在";
+"pointpassbookview_label_tipright" = "pt";
+"pointpassbookview_button_select" = "ポイントを交換する";
+// POINT PASSBOOK HEADER VIEW
+"pointpassbookheaderview_label_date" = "日付";
+"pointpassbookheaderview_label_content" = "内容";
+"pointpassbookheaderview_label_balanceofpayment" = "収支";
+"pointpassbookheaderview_label_balance" = "残高";
+
+
+// MARK: - LIST ALERT SCREEN
+"listalertview_navbar" = "お知らせ";
+"listalertview_button_all" = "すべて";
+"listalertview_button_unread" = "未読";
+"listalertview_button_read" = "既読";
+"listalertview_label_empty_unread_notice"      = "未読のお知らせはありません";
+"listalertview_label_empty_read_notice"      = "既読のお知らせはありません";
+"listalertview_label_empty" = "お知らせはありません";
+"listalertview_button_check" = "チェックする";
+
+// MARK: - ALERT DETAIL SCREEN
+"alertdetailview_navbar" = "お知らせ詳細";
+
+
+// MARK: - CHAT LIST SCREEN
+"chatlisttopview_navbar" = "メッセージ一覧";
+
+
+// MARK: - TOP MY PAGE SCREEN
+"topmypageview_navbar" = "マイページ";
+"topmypageview_label_namepos" = "さん";
+"topmypageview_button_getpoint" = "ポイント\n獲得";
+"topmypageview_button_exchangepoint" = "ポイント\n交換";
+"topmypageview_button_jobbyte" = "バイト";
+"topmypageview_button_jobintroduction" = "お仕事\n紹介";
+"topmypageview_button_myskill" = "MYスキル";
+
+// MARK: - MY PAGE PROFILE SCREEN
+"mypageprofileview_navbar" = "プロフィール";
+"mypageprofileview_button_close" = "キャンセル";
+"mypageprofileview_button_save" = "保存";
+"mypageprofileview_label_changeavatar" = "アイコン変更";
+"mypageprofileview_label_name" = "氏名";
+"mypageprofileview_label_username" = "ユーザー名";
+"mypageprofileview_label_email" = "メールアドレス";
+"mypageprofileview_label_number" = "電話番号";
+"mypageprofileview_label_date" = "生年月日";
+"mypageprofileview_label_building" = "建物名";
+"mypageprofileview_label_room" = "部屋番号";
+
+"mypageprofileview_label_oldpassword" = "現在のパスワード";
+"mypageprofileview_label_newpassword" = "新しいパスワード";
+"mypageprofileview_button_cancel" = "キャンセル";
+"mypageprofileview_button_done" = "完了";
+
+// MARK: - SELECT AVATAR USER POP UP
+"selectavataruser_popup_label_tiptop" = "変更したいアイコンを\n選択してください";
+
+// MARK: - MY PAGE SKILL SCREEN
+"mypageskillview_navbar" = "MYスキル";
+"mypageskillview_button_mypage" = "編集";
+
+// PAGE SKILL CELL
+"mypageskillview_label_noticetitle" = "スキルレベル";
+"mypageskillview_label_left" = "未経験";
+"mypageskillview_label_mid" = "1〜3年";
+"mypageskillview_label_right" = "3年以上";
+
+
+// MARK: - TIMELINE SCREEN
+"timelineview_navbar" = "ホーム";
+"timelineview_timeline_tab_title" = "タイムライン";
+"timelineview_getpoint_tab_title" = "ポイント獲得";
+"timelineview_exchangepoint_tab_title" = "ポイント交換";
+"timelineview_jobbyte_tab_title" = "バイト";
+"timelineview_jobintroduction_tab_title" = "イベント";
+"timeline_button_title_go_detail" = "もっと見る";
+"timeline_button_title_go_detail_collapse" = "閉じる";
+"timelineview_button_all" = "すべて";
+"timelineview_button_favorite" = "お気に入り";
+
+//MARK: - GET POINT SCREEN
+"get_point_clear"                   = "Clear!";
+"get_point_button_clear"            = "ポイントを獲得";
+"get_point_please_wait"             = "Please wait...";
+"get_point_comment_please_wait"     = "判定中です…";
+"get_point_complete"                = "Complete!";
+"get_point_comment_complete"        = "完了しました！";
+"get_point_button_title_all_list"  =   "すべて";
+"get_point_button_title_incomplete"  =   "未完了";
+"get_point_button_title_pending"  =   "判定待ち";
+
+"get_point_notice_empty_all_work"  =   "ポイント獲得はありません.";
+"get_point_notice_empty_imcomplete_work"  =   "未完了のワークはありません.";
+"get_point_notice_empty_waiting_work"  =   "判定待ちのワークはありません.";
+"get_point_title_site_access"  = "サイトアクセス";
+"get_point_title_questionnaire"  = "アンケート";
+"get_point_title_photo_taking"  = "写真撮り";
+"get_point_title_site_registration"  = "サイト登録";
+"get_point_title_mission_after_attendance"  = "アテンド後のミッション";
+"get_point_title_news"  = "ニュース";
+
+// MARK: - GET POINT DETAIL SCREEN
+"getpointdetailview_navbar" = "ポイント獲得";
+"getpointdetailview_button_getpoint" = "ポイントGET";
+"getpointdetailview_button_take_photo" = "撮影する";
+"getpointdetailview_button_answer" = "回答する";
+"getpointdetailview_label_titleget" = "獲得\n予定";
+
+// MARK: - CONFIRM IMAGE POPUP
+"confirmimagepopup_label_title" = "選択した写真を投稿します。\nよろしいですか？";
+
+// MARK: - EXCHANGE POINT SCREEN
+"point_exchange_button_title_all_list" = "すべて";
+"point_exchange_button_title_favorite" = "お気に入り";
+"point_exchange_button_title_replaced" = "交換済み";
+"point_exchange_button_title_go_to_get_point"  =   "ポイント獲得へ";
+
+"exchange_point_notice_empty_all"  =   "交換アイテムはありません.";
+"exchange_point_notice_empty_favourite"  =   "お気に入りはまだありません.";
+"exchange_point_notice_empty_replaced"  =   "交換済みアイテムはありません.";
+
+// MARK: - EXCHANGE POINT DETAIL SCREEN
+"exchangepointdetailview_navbar" = "ポイント交換";
+"exchangepointdetailview_label_titlecontent" = "商品情報";
+"exchangepointdetailview_button_next" = "交換する";
+
+"exchange_point_detail_title_confirm_view"  =   "ポイントが足りません";
+"exchange_point_detail_title_description_view"  =   "このポイントと交換するためには\n下記のポイント獲得をクリアしましょう！";
+"exchange_point_detail_title_favorite_off"  =   "お気に入りに追加";
+"exchange_point_detail_title_favorite_on"  =   "追加しました";
+"exchange_point_detail_status_message_not_enough"  =   "ただいま在庫切れです";
+"exchange_point_detail_status_message_enough"  =   "お一人様あたり交換可能回数：あと";
+"exchange_point_detail_item"  =   "回\n在庫あり";
+"exchange_point_detail_over_exchangetime"  =   "交換可能回数を超えています";
+
+// MARK: - JOB BYTE & JOB INTRODUCTION SCREEN
+"point_job_button_title_all_list" = "すべて";
+"point_job_button_title_favorite" = "お気に入り";
+"point_job_button_title_entered" = "応募済み";
+"point_job_notice_empty_favorite"  =   "お気に入りはまだありません.";
+"point_job_notice_empty_entered"  =   "応募済みはまだありません.";
+
+// MARK: - BYTE DETAIL SCREEN
+"detailbyteview_navbar" = "バイト詳細";
+"detailbyteview_button_apply" = "応募する";
+"detailbyteview_button_applied" = "応募済み";
+"detailbyteview_section_requireinfo" = "募集情報";
+"detailbyteview_button_companyinfo" = "会社概要";
+
+
+"byte_rule_button_title_get_point"      =   "000ポイントGET！";
+"byte_rule_button_title_favorite"  =   "お気に入り";
+"byte_rule_button_title_apply"      =   "応募する";
+
+// MARK: - JOB DETAIL SCREEN
+"detailjobview_navbar" = "イベント";
+"detailjobview_button_apply" = "申し込む";
+"detailjobview_button_applied" = "申し込み済み";
+"detailjobview_section_requireinfo" = "イベント詳細";
+"detailjobview_button_companyinfo" = "詳細（日時・場所）";
+
+// MARK: - CREATE FORM JOB & BYTE SCREEN
+"createformjobview_navbar" = "お申込みフォーム";
+"createformbyteview_navbar" = "応募フォーム";
+"createformjobview_label_first_guide_content" = "1）応募フォームご入力後、確認のメールが届きます。\n \n 2）担当者より、メールまたは電話にてご連絡いたします。\n \n 3）お仕事のご紹介・物件紹介をご希望の場合、ご相談日時を決めて、電話またはSkype等で詳細をお伺いします。 \n \n ※ その後のフローは、お客様の状況によって変わりますので、ご相談時にご案内いたします。\n \n ※ 電話相談は必須ではございません。メールのみのやりとりも承っております。";
+"createformjobview_label_name" = "氏名";
+"createformjobview_label_kataname" = "フリガナ\n（任意）";
+"createformjobview_label_email" = "メールアドレス";
+"createformjobview_label_phone" = "電話番号";
+"createformjobview_label_note" = "ご質問など\n（任意）";
+
+"job_apply_screen_button_go_to_confirm_screen"      =   "確認画面へ";
+"job_apply_screen_text_consideration_list"      =   "検討リスト";
+"job_apply_screen_text_necsesary_matter"      =   "必要事項";
+
+// MARK: - CONFIRM APPLY JOB & BYTE SCREEN
+"confirmapplyjobview_label_title" = "こちらで送信します。\nよろしいですか？";
+"confirmapplyjobview_section_submission_detail" = "応募内容";
+"confirmapplyjobview_button_send" = "送信";
+"confirmapplyjobview_section_necessary_info" = "必要事項";
+
+// MARK: - DONE APPLY JOB & BYTE SCREEN
+"doneapplyjobview_label_title" = "応募が完了しました";
+"doneapplyjobview_textview_content" = "ご応募ありがとうございます。\n \nご入力していただいたメールアドレスに確認メールをお送りしております。\nまた、メールが届いていない場合はお問い合わせください。\n \n ▼お問合せ先 \nTEL:03-6279-2063 \nMail:info@chihounomikata.com";
+"doneapplyjobview_button_done" = "イベントTOPへ";
+"doneapplyjobbyteview_button_done" = "バイトTOPへ";
+
+// MARK: - CONFIRM EXCHANGE POINT SCREEN
+// not enough
+"confirmexchangepointview_label_title_notenough" = "ポイントが足りません";
+"confirmexchangepointview_button_confirm_notenough" = "ポイント獲得へ";
+"confirmexchangepointview_label_description_notenough" = "このアイテムをお気に入りに追加して\nポイントを貯めましょう！";
+"confirmexchangepointview_label_favorite_notenough" = "お気に入りに追加";
+// enough
+"confirmexchangepointview_label_title2" = "アイテムを交換します";
+"confirmexchangepointview_label_mypoint" = "所持ポイント";
+"confirmexchangepointview_label_pointusing" = "使用ポイント";
+"confirmexchangepointview_label_result" = "残高ポイント";
+"confirmexchangepointview_button_accept" = "決定";
+// success
+"confirmexchangepointview_label_title3" = "手続き完了";
+"confirmexchangepointview_label_description3" = "ポイント交換手続きが完了しました。\n確認メールをお送りしております。\n「交換済み」からもご確認できます。";
+"confirmexchangepointview_button_gotop" = "ポイント交換TOPへ";
+
+// MARK: - POPUP TOP CUSTOM SCREEN
+"popuptopcustomview_label_top" = "チャットで相談しよう！";
+"popuptopcustomview_button_consultant" = "";
+"popuptopcustomview_button_home" = "";
+
+// MARK: - POPUP NOTICE SELECT SKILL SCREEN
+"popup_noticeselectskillview_label_title_success" = "チェックありがとうございます。\nさっそくはじめましょう！";
+"popup_noticeselectskillview_label_title" = "スキルチェックを入力すると\n最適なお仕事の紹介が受けられます。";
+"popup_noticeselectskillview_label_description" = "※不要な方はスキップしてください";
+"popup_noticeselectskillview_button_skip" = "スキップ";
+"popup_noticeselectskillview_button_confirm" = "進む";
+
+// MARK: -POPUP CONFIRM SIGN UP SCREEN
+"popup_confirmsignupview_label_title" = "以下の内容で登録します";
+
+// MARK: - ALERT CONFIRM CUSTOM SCREEN
+"alert_confirmcustomview_label_confirmtitle" = "削除します。\nよろしいですか？";
+"alert_confirmcustomview_label_successtitle" = "削除しました";
+"alert_confirmcustomview_button_success" = "自分の投稿へ";
+
+// MARK: - ALERT GET POINT DETAIL SCREEN
+"alert_getpointdetailview_label_title" = "Good job!";
+"alert_getpointdetailview_label_description" = "完了しました！";
+"alert_getpointdetailview_label_message" = "ポイント反映まで\nしばらくお待ちください";
+"alert_getpointdetailview_button_gotogetpoint" = "ポイント獲得へ";
+
+// MARK: - ALERT GET POINT SCREEN
+"alert_getpointview_label_title" = "Congratulations!";
+"alert_getpointview_label_description" = "ポイントを獲得しました！";
+"alert_getpointview_button_gotogetpoint" = "ポイント獲得へ";
+
+// MARK: - EXCHANGE DETAIL COMPLETE SCREEN
+"ExchangeDetailCompleteView_label_titletop" = "対象サイトにて商品コードを入力してください。";
+"ExchangeDetailCompleteView_label_titletop2" = "交換コードのURLからサイトへ進んでください。";
+"ExchangeDetailCompleteView_label_exchangecode" = "交換コード";
+"ExchangeDetailCompleteView_label_exchangedate_title" = "交換日:";
+"ExchangeDetailCompleteView_label_shipmentdate_title" = "発送日:";
+"ExchangeDetailCompleteView_label_expirationdate_title" = "有効期限:";
+
+// MARK: LOGIN MIKATA
+"loginmikata_label_new_register" = "新規登録";
+"loginmikata_label_enter_id" = "メールアドレス";
+"loginmikata_button_register_ielove" = "地方のミカタIDで登録";
+"loginmikata_button_back" = "すでにアカウントをお持ちの方はこちら";
+"loginmikata_label_password" = "パスワード";
+"loginmikata_label_top" = "地方のミカタで登録している \n メールとパスワードを入力下さい";
+"loginmikata_label_register" = "登録";
+"loginmikata_button_cancel" = "キャンセル";
+"loginmikata_label_register_complete_title" = "以下の内容で登録します。";
+"loginmikata_label_register_complete_subtitle" = "登録が完了いたしました。";
+"loginmikata_label_contractor_name" = "契約者名";
+"loginmikata_label_location" = "建物の所在地・名称";
+"loginmikata_label_during_contract" = "契約期間";
+"loginmikata_label_automatic_update" = "自動更新の有無";
+"loginmikata_label_contract_start_date" = "契約開始日";
+"loginmikata_label_contract_expriration_date" = "契約満了日";
+"loginmikata_label_monthly_payment" = "毎月のお支払い金額";
+"loginmikata_label_rent" = "賃料";
+"loginmikata_label_common_service" = "共益費";
+"loginmikata_label_fee" = "手数料";
+
+/*
+ **** Creator : CUONG KIEU
+ **** Description : Common
+ ****
+ */
+"yen" = "円";
+"year" = "年";
+"yes" = "あり";
+"no" = "いいえ";
+
+// MARK: - COMMON PLACEHOLDER
+"placeholder_search" = "検索ワードを入力してください";
+
+// MARK: - COMMON ALERT TITLE
+"alert_warning_title"                   = "Warning";
+"alert_view_setting_label_logout"       = "ログアウトします。\nよろしいですか？";
+"alert_view_setting_label_logout_success"      =    "ログアウトしました";
+"alert_edit_profile_success_title" = "プロフィールを変更しました";
+
+// MARK: - COMMON BUTTON TITLE
+"button_cancel_title"           = "Cancel";
+"button_ok_title"               = "OK";
+"common_button_cancel"          = "キャンセル";
+"common_button_ok"              =  "OK";
+"common_button_back"            = "戻る";
+"button_camera_title"           = "写真を撮る";
+"button_library_title"           = "写真を選択";
+
+// MARK: - ERROR MESSAGE
+"err_msg_content_forget_password_not_valid_email" = "正しいメールアドレスを入力してください。";
+"err_msg_content_forget_password_not_match_emails" = "メールアドレスが一致していません。";
+"err_msg_content_forget_password_empty_code"  = "メールに記載されたコードを入力してください。";
+
+"error_wrong_format_email"          = "メールアドレスを正しく入力してください";
+"error_empty_email"                 = "メールアドレスを入力してください";
+"error_existed_email"               = "このメールアドレスが既に登録されています";
+"error_empty_password"              = "パスワードを入力してください";
+"error_wrong_email"                 = "メールアドレス又はパスワードが正しくありません。再度入力してください";
+"error_not_cofirm_email"            = "メールアドレスの確認が完了していません。\n登録確認メールから登録を完了してください。";
+"error_not_registered_email"        = "一致するメールアドレスがありません";
+"error_wrong_format_password"       = "パースワードは半角英数字で入力してください";
+"error_wrong_number_letter_password" = "パースワードは8~20文字で入力してください";
+"error_not_choose_building"         = "建物名を選択してください";
+"error_not_choose_room"             = "部屋番号を選択してください";
+"error_not_choose_building"         = "建物名を選択してください";
+"error_wrong_number_letter_nickname" = "ユーザー名は50文字以内で入力してください";
+"error_empty_nickname"              = "ユーザー名を入力してください";
+"error_wrong_number_letter_name"    = "氏名は50文字以内で入力してください";
+"error_empty_name"                  = "氏名を入力してください";
+"error_empty_code"                  = "入居者専用パスを入力してください。";
+"error_wrong_code"                  = "入居者専用パスが違います。";
+"error_wrong_email_or_password"     = "メールアドレス又はパスワードが正しくありません。再度入力してください";
+"error_wrong_old_n_new_password" = "現在のパスワードと新しいパスワードを正しく入力してください。";
+"error_empty_phone"                  = "電話番号を入力してください";
+"error_wrong_format_kataname"                  = "カタカナで入力してください";
+"error_no_internet_connection"                  = "インターネット接続がありません。接続を確認してください。";
+"err_password_not_match"= "パスワードが確認用と不一致です";
+"err_exist_ieloveid" = "このミカタIDが既に登録されています";
+"err_ieloveid_or_password_not_match" = "ミカタのメールアドレス又はパスワードが正しくありません。再度入力してください";
+"err_duplicate_data" = "すでに登録されているメールアドレスです";
+
+// MARK: - SEND INQUIRY
+"inquiry_forgetpassword_subject" = "【問い合わせ】パスワード再発行";
+"inquiry_forgetpassword_content" = "お問い合わせありがとうございます。\nお手数ですが以下の項目を記載の上送信下さい。\n\n折り返し担当者よりご連絡差し上げます\n\n物件名：\n\n部屋番号：\n\n名前：\n\n電話番号：\n\n問い合わせ内容：\n\n";
+

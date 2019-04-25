@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="byteDetailTopCell" rowHeight="364" id="KGk-i7-Jjw" customClass="ByteDetailTopCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="364"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="363"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ou-fr-MtI">
+                        <rect key="frame" x="0.0" y="0.0" width="423" height="363"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="257" image="tempImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ps4-d5-2gk">
+                                <rect key="frame" x="0.0" y="0.0" width="423" height="217"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="(1)ホールスタッフ (2)キッチンスタッフ 大募集【大学生大歓迎】" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlT-W2-dJ5">
+                                <rect key="frame" x="12" y="222" width="399" height="45"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="19"/>
+                                <color key="textColor" red="0.42352941176470588" green="0.31372549019607843" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_yen_currency" translatesAutoresizingMaskIntoConstraints="NO" id="geY-ln-8AB">
+                                <rect key="frame" x="12" y="279" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="geY-ln-8AB" secondAttribute="height" id="J2N-bO-Adv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="icon_bus" translatesAutoresizingMaskIntoConstraints="NO" id="8Wv-k4-Tca">
+                                <rect key="frame" x="12" y="306" width="21" height="21"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_time" translatesAutoresizingMaskIntoConstraints="NO" id="nBo-c4-muh">
+                                <rect key="frame" x="136" y="279" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nBo-c4-muh" secondAttribute="height" id="2eT-kD-iYv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="時給1,000円〜" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuQ-Ux-do7">
+                                <rect key="frame" x="39" y="283" width="85" height="13"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="13"/>
+                                <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="255" text="「渋谷駅」より徒歩00分" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe9-1O-PVV">
+                                <rect key="frame" x="39" y="310" width="372" height="13"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="13"/>
+                                <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="(1)10:00〜15:00     (2)18:00～24:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf8-Hr-u4J">
+                                <rect key="frame" x="168" y="283" width="243" height="13"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="13"/>
+                                <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" text="(株) シャトレーゼホールディングス" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNv-kg-TpV">
+                                <rect key="frame" x="12" y="333" width="399" height="15"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="13"/>
+                                <color key="textColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Wv-k4-Tca" firstAttribute="top" secondItem="tf8-Hr-u4J" secondAttribute="bottom" constant="10" id="20X-gz-TG4"/>
+                            <constraint firstItem="gNv-kg-TpV" firstAttribute="leading" secondItem="8Wv-k4-Tca" secondAttribute="leading" id="7tG-LS-hZc"/>
+                            <constraint firstItem="geY-ln-8AB" firstAttribute="top" secondItem="YlT-W2-dJ5" secondAttribute="bottom" constant="12" id="9yr-cP-F7w"/>
+                            <constraint firstItem="gNv-kg-TpV" firstAttribute="top" secondItem="Oe9-1O-PVV" secondAttribute="bottom" constant="10" id="FeG-YZ-uJm"/>
+                            <constraint firstItem="geY-ln-8AB" firstAttribute="width" secondItem="8Ou-fr-MtI" secondAttribute="width" multiplier="20:414" id="J9m-w8-7eH"/>
+                            <constraint firstItem="Ps4-d5-2gk" firstAttribute="top" secondItem="8Ou-fr-MtI" secondAttribute="top" id="Jvr-RB-xtn"/>
+                            <constraint firstItem="Ps4-d5-2gk" firstAttribute="centerX" secondItem="8Ou-fr-MtI" secondAttribute="centerX" id="KMQ-UX-vaI"/>
+                            <constraint firstItem="8Wv-k4-Tca" firstAttribute="width" secondItem="geY-ln-8AB" secondAttribute="width" id="Pz9-RN-Hzc"/>
+                            <constraint firstAttribute="bottom" secondItem="gNv-kg-TpV" secondAttribute="bottom" constant="15" id="R63-dJ-djf"/>
+                            <constraint firstItem="nBo-c4-muh" firstAttribute="width" secondItem="geY-ln-8AB" secondAttribute="width" id="SMo-1M-DWP"/>
+                            <constraint firstItem="8Wv-k4-Tca" firstAttribute="width" secondItem="8Wv-k4-Tca" secondAttribute="height" id="UJa-fg-6SO"/>
+                            <constraint firstItem="Oe9-1O-PVV" firstAttribute="leading" secondItem="HuQ-Ux-do7" secondAttribute="leading" id="VnY-qp-9eC"/>
+                            <constraint firstItem="nBo-c4-muh" firstAttribute="centerY" secondItem="geY-ln-8AB" secondAttribute="centerY" id="WUr-RO-ihK"/>
+                            <constraint firstItem="tf8-Hr-u4J" firstAttribute="top" secondItem="HuQ-Ux-do7" secondAttribute="top" id="WXg-JQ-PRl"/>
+                            <constraint firstItem="YlT-W2-dJ5" firstAttribute="centerX" secondItem="8Ou-fr-MtI" secondAttribute="centerX" id="WnO-aX-CfL"/>
+                            <constraint firstItem="tf8-Hr-u4J" firstAttribute="trailing" secondItem="YlT-W2-dJ5" secondAttribute="trailing" id="YgC-se-VVR"/>
+                            <constraint firstItem="nBo-c4-muh" firstAttribute="leading" secondItem="HuQ-Ux-do7" secondAttribute="trailing" constant="12" id="gPD-Tf-rhe"/>
+                            <constraint firstItem="YlT-W2-dJ5" firstAttribute="width" secondItem="8Ou-fr-MtI" secondAttribute="width" multiplier="390:414" id="iaA-yn-dbR"/>
+                            <constraint firstItem="HuQ-Ux-do7" firstAttribute="centerY" secondItem="geY-ln-8AB" secondAttribute="centerY" id="imA-K4-7AA"/>
+                            <constraint firstItem="Oe9-1O-PVV" firstAttribute="centerY" secondItem="8Wv-k4-Tca" secondAttribute="centerY" id="jCR-BG-E8K"/>
+                            <constraint firstItem="tf8-Hr-u4J" firstAttribute="leading" secondItem="nBo-c4-muh" secondAttribute="trailing" constant="10.5" id="kUX-hu-oFb"/>
+                            <constraint firstItem="gNv-kg-TpV" firstAttribute="trailing" secondItem="YlT-W2-dJ5" secondAttribute="trailing" id="kdm-E4-Flz"/>
+                            <constraint firstItem="8Wv-k4-Tca" firstAttribute="leading" secondItem="geY-ln-8AB" secondAttribute="leading" id="ohb-Bi-ASj"/>
+                            <constraint firstItem="geY-ln-8AB" firstAttribute="leading" secondItem="YlT-W2-dJ5" secondAttribute="leading" id="osm-AG-Baw"/>
+                            <constraint firstItem="Ps4-d5-2gk" firstAttribute="width" secondItem="8Ou-fr-MtI" secondAttribute="width" id="syZ-BQ-pUe"/>
+                            <constraint firstItem="Oe9-1O-PVV" firstAttribute="trailing" secondItem="YlT-W2-dJ5" secondAttribute="trailing" id="v1x-cF-B8K"/>
+                            <constraint firstItem="YlT-W2-dJ5" firstAttribute="top" secondItem="Ps4-d5-2gk" secondAttribute="bottom" constant="5" id="xhA-bJ-yuD"/>
+                            <constraint firstItem="HuQ-Ux-do7" firstAttribute="leading" secondItem="geY-ln-8AB" secondAttribute="trailing" constant="6" id="y9k-S5-tSo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Ou-fr-MtI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="46I-hP-Lpw"/>
+                    <constraint firstAttribute="trailing" secondItem="8Ou-fr-MtI" secondAttribute="trailing" id="IVN-Hj-dZW"/>
+                    <constraint firstItem="8Ou-fr-MtI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NN9-qr-gLf"/>
+                    <constraint firstAttribute="bottom" secondItem="8Ou-fr-MtI" secondAttribute="bottom" id="Vjs-6S-GB1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBottomLabelSkill" destination="FeG-YZ-uJm" id="68Q-Dc-dW5"/>
+                <outlet property="mBottomLabelTipBottom" destination="R63-dJ-djf" id="Sgw-tO-66T"/>
+                <outlet property="mImageByte" destination="Ps4-d5-2gk" id="yxS-eP-vdX"/>
+                <outlet property="mLabelBus" destination="Oe9-1O-PVV" id="mcc-dv-7zH"/>
+                <outlet property="mLabelCurrency" destination="HuQ-Ux-do7" id="yee-ik-NYQ"/>
+                <outlet property="mLabelTime" destination="tf8-Hr-u4J" id="3IP-8s-1hB"/>
+                <outlet property="mLabelTipBottom" destination="gNv-kg-TpV" id="D1O-Mu-s0M"/>
+                <outlet property="mLeadingIconTime" destination="gPD-Tf-rhe" id="eSL-g4-qHf"/>
+                <outlet property="mLeadingLabelCurrency" destination="y9k-S5-tSo" id="gD9-AT-nwR"/>
+                <outlet property="mLeadingLabelTime" destination="kUX-hu-oFb" id="3JN-Lp-uMR"/>
+                <outlet property="mTitleByte" destination="YlT-W2-dJ5" id="AeI-FO-ImC"/>
+                <outlet property="mTopConstraintIconCurrency" destination="9yr-cP-F7w" id="OEg-ID-yKF"/>
+                <outlet property="mTopConstraintLabelTitleByte" destination="xhA-bJ-yuD" id="0Fv-tU-Qf1"/>
+            </connections>
+            <point key="canvasLocation" x="89.5" y="153"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_bus" width="102" height="102"/>
+        <image name="icon_time" width="100" height="100"/>
+        <image name="icon_yen_currency" width="102" height="102"/>
+        <image name="tempImage.png" width="343" height="217"/>
+    </resources>
+</document>

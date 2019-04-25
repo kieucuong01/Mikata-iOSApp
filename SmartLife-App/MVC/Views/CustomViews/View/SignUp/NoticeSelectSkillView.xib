@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleAspectFill" id="iN0-l3-epB" customClass="NoticeSelectSkillView" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-k1-rAZ" userLabel="SuccessView">
+                    <rect key="frame" x="24" y="235" width="326" height="196"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hC-A5-TGW" userLabel="OkButton" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="62.5" y="113" width="200" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7hC-A5-TGW" secondAttribute="height" multiplier="200:50" id="xHY-u6-b90"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="OK"/>
+                            <connections>
+                                <action selector="clickOkButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="sdB-Dt-QPb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrJ-Kv-7aE">
+                            <rect key="frame" x="45" y="50.5" width="236.5" height="35.5"/>
+                            <string key="text">チェックありがとうございます。
+さっそくはじめましょう！</string>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7hC-A5-TGW" firstAttribute="top" secondItem="QrJ-Kv-7aE" secondAttribute="bottom" constant="27" id="3E0-3K-CyZ"/>
+                        <constraint firstItem="7hC-A5-TGW" firstAttribute="centerX" secondItem="c3z-k1-rAZ" secondAttribute="centerX" id="Aub-Rg-C7Q"/>
+                        <constraint firstAttribute="width" secondItem="c3z-k1-rAZ" secondAttribute="height" multiplier="652:392" id="BA5-0t-EVc"/>
+                        <constraint firstItem="7hC-A5-TGW" firstAttribute="bottom" secondItem="c3z-k1-rAZ" secondAttribute="bottom" constant="-33" id="TJ1-5T-IHm"/>
+                        <constraint firstItem="QrJ-Kv-7aE" firstAttribute="centerX" secondItem="c3z-k1-rAZ" secondAttribute="centerX" id="Yhm-1F-2dw"/>
+                        <constraint firstItem="7hC-A5-TGW" firstAttribute="width" secondItem="c3z-k1-rAZ" secondAttribute="width" multiplier="200:326" id="qZX-yV-lmt"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPX-y4-B1a" userLabel="ConfirmView">
+                    <rect key="frame" x="24" y="218" width="326" height="230"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrd-gn-mHE" userLabel="CloseButton">
+                            <rect key="frame" x="276" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lrd-gn-mHE" secondAttribute="height" id="pUM-v1-UU3"/>
+                            </constraints>
+                            <state key="normal" image="icon_close_brown"/>
+                            <connections>
+                                <action selector="clickCloseButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="EQH-on-Fbu"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi1-Sk-AK6" userLabel="TitleLabel">
+                            <rect key="frame" x="-0.5" y="50" width="326" height="35.5"/>
+                            <string key="text">スキルチェックを入力すると
+最適なお仕事の紹介が受けられます。</string>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="※不要な方はスキップしてください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5S-dn-IUb" userLabel="DescriptionLabel">
+                            <rect key="frame" x="-0.5" y="105.5" width="326" height="13"/>
+                            <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="13"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEd-fe-CGe" userLabel="SkipButton" customClass="UIBorderButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="31" y="138.5" width="127" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="PEd-fe-CGe" secondAttribute="height" multiplier="127:50" id="Rpb-3I-eWD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="スキップ"/>
+                            <connections>
+                                <action selector="clickSkipButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="IpN-0d-x5e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOH-M3-QPb" userLabel="ConfirmButton" customClass="UIColorButton" customModule="SmartLife_App" customModuleProvider="target">
+                            <rect key="frame" x="168" y="138.5" width="127" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="YOH-M3-QPb" secondAttribute="height" multiplier="127:50" id="vqg-r1-76B"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="16"/>
+                            <state key="normal" title="進む"/>
+                            <connections>
+                                <action selector="clickConfirmButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="WgQ-TP-WTj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rPX-y4-B1a" secondAttribute="height" multiplier="326:230" id="054-1K-ORF"/>
+                        <constraint firstItem="lrd-gn-mHE" firstAttribute="width" secondItem="rPX-y4-B1a" secondAttribute="width" multiplier="50:326" id="0wb-gA-p5S"/>
+                        <constraint firstItem="YOH-M3-QPb" firstAttribute="width" secondItem="rPX-y4-B1a" secondAttribute="width" multiplier="127:326" id="8ve-cC-Y6f"/>
+                        <constraint firstItem="lrd-gn-mHE" firstAttribute="top" secondItem="rPX-y4-B1a" secondAttribute="top" id="Dm4-m8-auM"/>
+                        <constraint firstItem="o5S-dn-IUb" firstAttribute="width" secondItem="rPX-y4-B1a" secondAttribute="width" id="EHB-XX-TNv"/>
+                        <constraint firstItem="qi1-Sk-AK6" firstAttribute="top" secondItem="lrd-gn-mHE" secondAttribute="bottom" id="L2p-yQ-t9f"/>
+                        <constraint firstItem="YOH-M3-QPb" firstAttribute="leading" secondItem="rPX-y4-B1a" secondAttribute="centerX" constant="5" id="Qq7-wn-N5U"/>
+                        <constraint firstItem="qi1-Sk-AK6" firstAttribute="width" secondItem="rPX-y4-B1a" secondAttribute="width" id="e29-Zq-Vt9"/>
+                        <constraint firstItem="o5S-dn-IUb" firstAttribute="top" secondItem="qi1-Sk-AK6" secondAttribute="bottom" constant="20" id="ect-Iw-meY"/>
+                        <constraint firstItem="PEd-fe-CGe" firstAttribute="trailing" secondItem="rPX-y4-B1a" secondAttribute="centerX" constant="-5" id="lNb-p0-sVx"/>
+                        <constraint firstItem="YOH-M3-QPb" firstAttribute="top" secondItem="o5S-dn-IUb" secondAttribute="bottom" constant="20" id="q54-Nt-am9"/>
+                        <constraint firstItem="PEd-fe-CGe" firstAttribute="top" secondItem="o5S-dn-IUb" secondAttribute="bottom" constant="20" id="qin-XH-3Wo"/>
+                        <constraint firstItem="o5S-dn-IUb" firstAttribute="centerX" secondItem="rPX-y4-B1a" secondAttribute="centerX" id="rEH-qC-CSe"/>
+                        <constraint firstItem="qi1-Sk-AK6" firstAttribute="centerX" secondItem="rPX-y4-B1a" secondAttribute="centerX" id="sZA-Xp-oaQ"/>
+                        <constraint firstItem="PEd-fe-CGe" firstAttribute="width" secondItem="rPX-y4-B1a" secondAttribute="width" multiplier="127:326" id="uvb-3F-gur"/>
+                        <constraint firstItem="lrd-gn-mHE" firstAttribute="trailing" secondItem="rPX-y4-B1a" secondAttribute="trailing" id="yww-6x-KDE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.50429137323943662" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="c3z-k1-rAZ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="326:375" id="FrW-Cb-kbl"/>
+                <constraint firstItem="rPX-y4-B1a" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JnF-ZO-spr"/>
+                <constraint firstItem="rPX-y4-B1a" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P3N-4u-FcM"/>
+                <constraint firstItem="c3z-k1-rAZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Q8z-xM-0c8"/>
+                <constraint firstItem="c3z-k1-rAZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o5I-wr-MVK"/>
+                <constraint firstItem="rPX-y4-B1a" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="326:375" id="sVV-6k-QdY"/>
+            </constraints>
+            <connections>
+                <outlet property="confirmButton" destination="YOH-M3-QPb" id="CZh-5g-l42"/>
+                <outlet property="confirmButtonTopConstraint" destination="q54-Nt-am9" id="z3f-fv-pyk"/>
+                <outlet property="confirmView" destination="rPX-y4-B1a" id="Kd4-KX-jeW"/>
+                <outlet property="descriptionLabel" destination="o5S-dn-IUb" id="6Ip-Jb-woP"/>
+                <outlet property="descriptionLabelTopConstraint" destination="ect-Iw-meY" id="AXd-P2-c77"/>
+                <outlet property="okButtonBottomConstraint" destination="TJ1-5T-IHm" id="JER-A4-saJ"/>
+                <outlet property="skipButton" destination="PEd-fe-CGe" id="ZPy-qG-yae"/>
+                <outlet property="skipButtonTopConstraint" destination="qin-XH-3Wo" id="5Ee-5a-eH5"/>
+                <outlet property="successView" destination="c3z-k1-rAZ" id="w7A-tq-lDg"/>
+                <outlet property="titleLabel" destination="qi1-Sk-AK6" id="OyX-J4-zfE"/>
+                <outlet property="titleSuccessLabel" destination="QrJ-Kv-7aE" id="hfz-1v-8ig"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close_brown" width="50" height="50"/>
+    </resources>
+</document>

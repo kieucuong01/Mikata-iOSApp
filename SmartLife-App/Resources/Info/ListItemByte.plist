@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>section1</key>
+	<array>
+		<string>給与</string>
+		<string>勤務時間</string>
+		<string>勤務地</string>
+		<string>最寄駅</string>
+		<string>応募条件</string>
+		<string>休日・休暇</string>
+		<string>待遇・福利厚生</string>
+	</array>
+	<key>section2</key>
+	<array>
+		<string>企業名</string>
+		<string>所在地</string>
+		<string>事業内容</string>
+		<string>URL</string>
+	</array>
+</dict>
+</plist>

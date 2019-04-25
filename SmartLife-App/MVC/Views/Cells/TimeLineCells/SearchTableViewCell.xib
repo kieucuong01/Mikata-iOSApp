@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="searchTableViewCell" rowHeight="110" id="KGk-i7-Jjw" customClass="SearchTableViewCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="wPf-aw-ggq" customClass="SearchBarCustomView" customModule="SmartLife_App" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10.5" width="311" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wPf-aw-ggq" secondAttribute="height" multiplier="343:41" id="CHR-7A-jAQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ha8-WV-MdO">
+                        <rect key="frame" x="16" y="62.5" width="311" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT3-hF-J2N">
+                                <rect key="frame" x="0.0" y="0.0" width="145.5" height="30"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                <connections>
+                                    <action selector="clickedButtonFirst:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="465-fs-RJi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-5e-Jae">
+                                <rect key="frame" x="165.5" y="0.0" width="145.5" height="30"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                <connections>
+                                    <action selector="clickedButtonSecond:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="x4k-3Y-FSH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xZr-5e-Jae" secondAttribute="bottom" id="AlY-Uc-Ss0"/>
+                            <constraint firstItem="xZr-5e-Jae" firstAttribute="width" secondItem="KT3-hF-J2N" secondAttribute="width" id="Eia-qR-wBA"/>
+                            <constraint firstItem="xZr-5e-Jae" firstAttribute="top" secondItem="Ha8-WV-MdO" secondAttribute="top" id="OpK-If-fGn"/>
+                            <constraint firstAttribute="bottom" secondItem="KT3-hF-J2N" secondAttribute="bottom" id="bBp-GR-v66"/>
+                            <constraint firstItem="KT3-hF-J2N" firstAttribute="top" secondItem="Ha8-WV-MdO" secondAttribute="top" id="mS7-Pz-VFG"/>
+                            <constraint firstAttribute="width" secondItem="Ha8-WV-MdO" secondAttribute="height" multiplier="343:33" id="maj-Ir-jpe"/>
+                            <constraint firstItem="KT3-hF-J2N" firstAttribute="leading" secondItem="Ha8-WV-MdO" secondAttribute="leading" id="qif-GE-Lnl"/>
+                            <constraint firstAttribute="trailing" secondItem="xZr-5e-Jae" secondAttribute="trailing" id="vkq-zo-KCI"/>
+                            <constraint firstItem="xZr-5e-Jae" firstAttribute="leading" secondItem="KT3-hF-J2N" secondAttribute="trailing" constant="20" id="wxe-ou-OxG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wPf-aw-ggq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="5if-Sz-ARt"/>
+                    <constraint firstAttribute="bottom" secondItem="Ha8-WV-MdO" secondAttribute="bottom" constant="12" id="IcZ-sx-NSj"/>
+                    <constraint firstAttribute="trailing" secondItem="wPf-aw-ggq" secondAttribute="trailing" constant="16" id="RKC-n1-acw"/>
+                    <constraint firstItem="Ha8-WV-MdO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hAG-31-krv"/>
+                    <constraint firstItem="Ha8-WV-MdO" firstAttribute="top" secondItem="wPf-aw-ggq" secondAttribute="bottom" constant="15" id="hNf-LC-Ke7"/>
+                    <constraint firstItem="Ha8-WV-MdO" firstAttribute="leading" secondItem="wPf-aw-ggq" secondAttribute="leading" id="jj1-Xh-qIL"/>
+                    <constraint firstItem="Ha8-WV-MdO" firstAttribute="trailing" secondItem="wPf-aw-ggq" secondAttribute="trailing" id="vvj-ei-tiI"/>
+                    <constraint firstItem="wPf-aw-ggq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wx8-JA-TsE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mButtonFirst" destination="KT3-hF-J2N" id="cTI-OY-ne2"/>
+                <outlet property="mButtonSecond" destination="xZr-5e-Jae" id="yv6-X0-X09"/>
+                <outlet property="mLeadingContrain" destination="wx8-JA-TsE" id="aeA-Vj-qMO"/>
+                <outlet property="mSearchBarCustomView" destination="wPf-aw-ggq" id="KUO-6z-Uey"/>
+                <outlet property="mTopConstraintSearchBarCustomView" destination="5if-Sz-ARt" id="Dp7-uo-IYG"/>
+                <outlet property="mTopContraintButtonList" destination="hNf-LC-Ke7" id="Eb7-MW-TQ5"/>
+                <outlet property="mTrailingConstraint" destination="RKC-n1-acw" id="Oyk-7y-qmn"/>
+            </connections>
+            <point key="canvasLocation" x="99.5" y="-41"/>
+        </tableViewCell>
+    </objects>
+</document>

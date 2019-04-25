@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSecondView" customModule="SmartLife_App" customModuleProvider="target">
+            <connections>
+                <outlet property="lblButtonSort" destination="slm-qT-4w9" id="hW8-Y9-1fh"/>
+                <outlet property="lblNumsJobOpening" destination="IX1-bI-jkt" id="3KZ-PH-pzF"/>
+                <outlet property="lblSettingCondition" destination="SbE-dN-anu" id="AuZ-R0-RbN"/>
+                <outlet property="lblValueNumJobOpening" destination="OMK-ut-EzD" id="Ltb-eF-6If"/>
+                <outlet property="lblValueSettingCondition" destination="7Oq-zo-Rng" id="PNx-LP-dzR"/>
+                <outlet property="mButtonByAttention" destination="eBY-J8-EzZ" id="CK1-4b-9qa"/>
+                <outlet property="mButtonInHourlyDay" destination="olN-Cp-9fG" id="BvU-sn-o8M"/>
+                <outlet property="mButtonNewAvarral" destination="z1J-8v-QfC" id="RKl-j3-Ycu"/>
+                <outlet property="mLabelTopNearArrowDown" destination="4MQ-Eh-V03" id="7hf-Hv-FeQ"/>
+                <outlet property="mLeadingBtnArrowDownConstraint" destination="Wko-e7-7hh" id="c3O-ZN-xU1"/>
+                <outlet property="mLeadingLabelTopNearArrowDownConstraint" destination="Pcy-gK-D5z" id="gww-dl-x57"/>
+                <outlet property="mLeadingLabelValueNumJobOpening" destination="9vJ-lZ-WjK" id="HTc-dM-K5W"/>
+                <outlet property="mLeadingTopLabelNumJobsOpeningConstraint" destination="zlO-OM-AcJ" id="vVD-wG-IBC"/>
+                <outlet property="mTopLabelNumJobsOpeningConstraint" destination="vKt-fU-bkc" id="q0o-tu-mii"/>
+                <outlet property="mTopLabelSettingConditionConstraint" destination="U24-B9-X1G" id="3gD-76-EQB"/>
+                <outlet property="mTopLabelSortingConstraint" destination="6Lu-wW-EnC" id="Wrt-cQ-z6I"/>
+                <outlet property="mViewBottomContent" destination="P77-QP-1Ra" id="cE1-bz-xad"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AU9-gN-b5c">
+                    <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugi-nn-VY1">
+                            <rect key="frame" x="10" y="76" width="171.5" height="227.5"/>
+                            <state key="normal" image="ic_arrow_down"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="この特集を見ているユーザーの特徴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MQ-Eh-V03">
+                            <rect key="frame" x="25" y="184" width="147.5" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.42352941176470588" green="0.31372549019607843" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ugi-nn-VY1" firstAttribute="centerY" secondItem="AU9-gN-b5c" secondAttribute="centerY" id="3go-M1-Aoe"/>
+                        <constraint firstItem="4MQ-Eh-V03" firstAttribute="centerY" secondItem="AU9-gN-b5c" secondAttribute="centerY" id="Aem-uO-BEA"/>
+                        <constraint firstItem="ugi-nn-VY1" firstAttribute="width" secondItem="AU9-gN-b5c" secondAttribute="height" multiplier="9:20" id="Btz-ck-0nF"/>
+                        <constraint firstAttribute="width" secondItem="AU9-gN-b5c" secondAttribute="height" id="Nb3-Hp-UAA"/>
+                        <constraint firstItem="4MQ-Eh-V03" firstAttribute="leading" secondItem="AU9-gN-b5c" secondAttribute="leading" constant="25" id="Pcy-gK-D5z"/>
+                        <constraint firstItem="ugi-nn-VY1" firstAttribute="leading" secondItem="AU9-gN-b5c" secondAttribute="leading" constant="10" id="Wko-e7-7hh"/>
+                        <constraint firstItem="ugi-nn-VY1" firstAttribute="height" secondItem="AU9-gN-b5c" secondAttribute="height" multiplier="3:5" id="ove-1z-q8G"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P77-QP-1Ra">
+                    <rect key="frame" x="0.0" y="134" width="380" height="142"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="求人数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-bI-jkt">
+                            <rect key="frame" x="15" y="17" width="36" height="14"/>
+                            <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,500件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMK-ut-EzD">
+                            <rect key="frame" x="66" y="15" width="49.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="並び替え" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slm-qT-4w9">
+                            <rect key="frame" x="15" y="53" width="48" height="14"/>
+                            <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1J-8v-QfC">
+                            <rect key="frame" x="66" y="45.5" width="91.5" height="30.5"/>
+                            <color key="backgroundColor" red="0.72156862745098038" green="0.62352941176470589" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14.5"/>
+                            <state key="normal" title="新着順">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBY-J8-EzZ">
+                            <rect key="frame" x="164.5" y="45.5" width="91" height="30.5"/>
+                            <color key="backgroundColor" red="0.89411764705882346" green="0.83137254901960778" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14.5"/>
+                            <state key="normal" title="注目度順">
+                                <color key="titleColor" red="0.42352941176470588" green="0.31372549019607843" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olN-Cp-9fG">
+                            <rect key="frame" x="262.5" y="45.5" width="91" height="30.5"/>
+                            <color key="backgroundColor" red="0.91764705882352937" green="0.86274509803921573" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14.5"/>
+                            <state key="normal" title="時給順">
+                                <color key="titleColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="設定条件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbE-dN-anu">
+                            <rect key="frame" x="15" y="93" width="48" height="14"/>
+                            <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Oq-zo-Rng">
+                            <rect key="frame" x="66" y="85.5" width="172" height="30.5"/>
+                            <string key="text">新宿区、接客、駅ちか、長期、
+¥1000〜、アルバイト</string>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bh-yo-PJV">
+                            <rect key="frame" x="240" y="85" width="113.5" height="30.5"/>
+                            <color key="backgroundColor" red="0.72156862745098038" green="0.62352941176470589" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14.5"/>
+                            <state key="normal" title="絞り込み">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.42352941179999998" green="0.31372549020000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3Bh-yo-PJV" firstAttribute="height" secondItem="olN-Cp-9fG" secondAttribute="height" id="0Zq-Dk-DN5"/>
+                        <constraint firstItem="olN-Cp-9fG" firstAttribute="height" secondItem="z1J-8v-QfC" secondAttribute="height" id="10h-ia-9y7"/>
+                        <constraint firstItem="7Oq-zo-Rng" firstAttribute="leading" secondItem="z1J-8v-QfC" secondAttribute="leading" id="1K4-v3-GVY"/>
+                        <constraint firstItem="z1J-8v-QfC" firstAttribute="centerY" secondItem="slm-qT-4w9" secondAttribute="centerY" id="2m6-iX-Zzn"/>
+                        <constraint firstItem="slm-qT-4w9" firstAttribute="top" secondItem="P77-QP-1Ra" secondAttribute="top" constant="53" id="6Lu-wW-EnC"/>
+                        <constraint firstItem="OMK-ut-EzD" firstAttribute="leading" secondItem="P77-QP-1Ra" secondAttribute="leading" constant="66" id="9vJ-lZ-WjK"/>
+                        <constraint firstItem="7Oq-zo-Rng" firstAttribute="height" secondItem="z1J-8v-QfC" secondAttribute="height" id="IQN-AZ-KRJ"/>
+                        <constraint firstItem="olN-Cp-9fG" firstAttribute="leading" secondItem="eBY-J8-EzZ" secondAttribute="trailing" constant="7" id="KZu-nO-bgP"/>
+                        <constraint firstItem="7Oq-zo-Rng" firstAttribute="centerY" secondItem="SbE-dN-anu" secondAttribute="centerY" id="Mi6-ug-Iiu"/>
+                        <constraint firstItem="eBY-J8-EzZ" firstAttribute="height" secondItem="z1J-8v-QfC" secondAttribute="height" id="P3O-dB-IDS"/>
+                        <constraint firstItem="z1J-8v-QfC" firstAttribute="width" secondItem="P77-QP-1Ra" secondAttribute="width" multiplier="90:375" id="PkV-Rk-9yo"/>
+                        <constraint firstItem="IX1-bI-jkt" firstAttribute="baseline" secondItem="OMK-ut-EzD" secondAttribute="baseline" id="S0Y-zH-LIP"/>
+                        <constraint firstItem="3Bh-yo-PJV" firstAttribute="centerY" secondItem="SbE-dN-anu" secondAttribute="centerY" id="T9a-i0-OI3"/>
+                        <constraint firstItem="SbE-dN-anu" firstAttribute="top" secondItem="P77-QP-1Ra" secondAttribute="top" constant="93" id="U24-B9-X1G"/>
+                        <constraint firstItem="3Bh-yo-PJV" firstAttribute="trailing" secondItem="olN-Cp-9fG" secondAttribute="trailing" id="WoK-3v-GKp"/>
+                        <constraint firstItem="SbE-dN-anu" firstAttribute="leading" secondItem="slm-qT-4w9" secondAttribute="leading" id="a4Q-1I-DeL"/>
+                        <constraint firstItem="7Oq-zo-Rng" firstAttribute="width" secondItem="P77-QP-1Ra" secondAttribute="width" multiplier="170/375" id="blI-Yi-Djh"/>
+                        <constraint firstItem="eBY-J8-EzZ" firstAttribute="width" secondItem="z1J-8v-QfC" secondAttribute="width" id="exa-GR-nNA"/>
+                        <constraint firstItem="olN-Cp-9fG" firstAttribute="centerY" secondItem="z1J-8v-QfC" secondAttribute="centerY" id="g4o-AT-lPw"/>
+                        <constraint firstItem="eBY-J8-EzZ" firstAttribute="centerY" secondItem="z1J-8v-QfC" secondAttribute="centerY" id="hnw-wu-12w"/>
+                        <constraint firstItem="olN-Cp-9fG" firstAttribute="width" secondItem="z1J-8v-QfC" secondAttribute="width" id="lf3-GM-OUH"/>
+                        <constraint firstItem="z1J-8v-QfC" firstAttribute="leading" secondItem="OMK-ut-EzD" secondAttribute="leading" id="mZr-zx-x2j"/>
+                        <constraint firstItem="slm-qT-4w9" firstAttribute="leading" secondItem="IX1-bI-jkt" secondAttribute="leading" id="qdZ-ZK-BWj"/>
+                        <constraint firstItem="z1J-8v-QfC" firstAttribute="height" secondItem="P77-QP-1Ra" secondAttribute="width" multiplier="30:375" id="uhe-Ku-UAt"/>
+                        <constraint firstItem="IX1-bI-jkt" firstAttribute="top" secondItem="P77-QP-1Ra" secondAttribute="top" constant="17" id="vKt-fU-bkc"/>
+                        <constraint firstItem="3Bh-yo-PJV" firstAttribute="width" secondItem="P77-QP-1Ra" secondAttribute="width" multiplier="112:375" id="whz-ji-822"/>
+                        <constraint firstItem="eBY-J8-EzZ" firstAttribute="leading" secondItem="z1J-8v-QfC" secondAttribute="trailing" constant="7" id="yrz-Tg-EU7"/>
+                        <constraint firstItem="IX1-bI-jkt" firstAttribute="leading" secondItem="P77-QP-1Ra" secondAttribute="leading" constant="15" id="zlO-OM-AcJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AU9-gN-b5c" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9kg-4V-Lrm"/>
+                <constraint firstAttribute="bottom" secondItem="P77-QP-1Ra" secondAttribute="bottom" id="EvH-Sc-IQf"/>
+                <constraint firstItem="AU9-gN-b5c" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="N3V-f0-V4r"/>
+                <constraint firstItem="P77-QP-1Ra" firstAttribute="centerX" secondItem="AU9-gN-b5c" secondAttribute="centerX" id="PpW-aG-KG0"/>
+                <constraint firstItem="P77-QP-1Ra" firstAttribute="height" secondItem="AU9-gN-b5c" secondAttribute="width" multiplier="140:375" id="cWF-VX-FjV"/>
+                <constraint firstItem="AU9-gN-b5c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s7Q-Ma-Nzn"/>
+                <constraint firstItem="P77-QP-1Ra" firstAttribute="width" secondItem="AU9-gN-b5c" secondAttribute="width" id="ufO-Gz-pdE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="28" y="43"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_down" width="40" height="40"/>
+    </resources>
+</document>

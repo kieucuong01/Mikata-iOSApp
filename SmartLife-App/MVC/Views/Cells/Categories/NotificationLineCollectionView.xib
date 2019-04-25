@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="listNotificationCollectionView" id="YRK-XV-U1s" customClass="NotificationLineCollectionView" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="453"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="453"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NAE-oj-eEs" customClass="TPKeyboardAvoidingTableView">
+                                <rect key="frame" x="0.0" y="8" width="375" height="437"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-de-Tu2" userLabel="FilterTableView" customClass="TPKeyboardAvoidingTableView">
+                                <rect key="frame" x="0.0" y="126" width="375" height="319"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.96470588239999999" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TK-o5-EZs">
+                                <rect key="frame" x="275" y="341" width="100" height="104"/>
+                                <state key="normal" image="ic_create_new_post"/>
+                                <connections>
+                                    <action selector="clickedButtonCreateNewPost:" destination="YRK-XV-U1s" eventType="touchUpInside" id="ePo-4x-BCg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8TK-o5-EZs" firstAttribute="height" secondItem="NAE-oj-eEs" secondAttribute="width" multiplier="104:375" id="Mid-gh-ThQ"/>
+                            <constraint firstItem="JfH-de-Tu2" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="T9N-V6-wQr"/>
+                            <constraint firstItem="NAE-oj-eEs" firstAttribute="bottom" secondItem="8TK-o5-EZs" secondAttribute="bottom" id="TO2-hE-5Dz"/>
+                            <constraint firstItem="NAE-oj-eEs" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="bc1-Su-k3V"/>
+                            <constraint firstItem="JfH-de-Tu2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cgo-TL-AqY"/>
+                            <constraint firstItem="8TK-o5-EZs" firstAttribute="width" secondItem="NAE-oj-eEs" secondAttribute="width" multiplier="100:375" id="h9J-Og-m3Y"/>
+                            <constraint firstAttribute="bottom" secondItem="NAE-oj-eEs" secondAttribute="bottom" id="iH0-5I-xpa"/>
+                            <constraint firstItem="NAE-oj-eEs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="lyn-Oi-ONr"/>
+                            <constraint firstItem="NAE-oj-eEs" firstAttribute="trailing" secondItem="8TK-o5-EZs" secondAttribute="trailing" id="m6f-3q-FDG"/>
+                            <constraint firstItem="NAE-oj-eEs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="p71-xg-NUW"/>
+                            <constraint firstItem="JfH-de-Tu2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="118" id="zJa-5C-ADR"/>
+                            <constraint firstItem="JfH-de-Tu2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="zpM-z2-cp4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.96505111455917358" blue="0.93963748216629028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="YRK-XV-U1s" secondAttribute="top" id="HTD-8v-8Zb"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="YRK-XV-U1s" secondAttribute="leading" id="RWu-hO-kbD"/>
+                <constraint firstAttribute="bottomMargin" secondItem="iN0-l3-epB" secondAttribute="bottom" id="s74-DI-WHB"/>
+                <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="uJt-dP-tIt"/>
+            </constraints>
+            <connections>
+                <outlet property="filterTableView" destination="JfH-de-Tu2" id="rDr-ct-Mwv"/>
+                <outlet property="mButtonCreatePost" destination="8TK-o5-EZs" id="xsn-qs-rYe"/>
+                <outlet property="mTopConstraintTableViewNotification" destination="zJa-5C-ADR" id="QJP-gA-ZKs"/>
+                <outlet property="tableListNotification" destination="NAE-oj-eEs" id="NY1-PV-2f2"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="81.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_create_new_post" width="100" height="104"/>
+    </resources>
+</document>

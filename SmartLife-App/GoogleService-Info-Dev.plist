@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>779611626624-r4iei3e1og4lu7evq72d9ljpi9trhdsn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.779611626624-r4iei3e1og4lu7evq72d9ljpi9trhdsn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqcNiNcU48YA0Ca6ZfJUrVH1OTmfMKn1M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>779611626624</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.smart-campus.mikata-stg</string>
+	<key>PROJECT_ID</key>
+	<string>mikata-stag</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mikata-stag.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:779611626624:ios:2f388e59aa38ac08</string>
+	<key>DATABASE_URL</key>
+	<string>https://mikata-stag.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="yugothib.ttf">
+            <string>YuGothic-Bold</string>
+        </array>
+        <array key="yugothim.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="confirmJobElementCell" rowHeight="219" id="ha5-qZ-Wcz" customClass="ConfirmJobElementCell" customModule="SmartLife_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ha5-qZ-Wcz" id="6Ne-Ye-EEI">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="218.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNu-Ck-AqI">
+                        <rect key="frame" x="25" y="11" width="339" height="195.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" text="☆熱い仲間大募集☆ 開放的で、社員の風通しのいい雰囲気です◎" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nv-ty-ouS">
+                                <rect key="frame" x="10" y="8" width="322" height="31"/>
+                                <fontDescription key="fontDescription" name="YuGothic-Bold" family="Yu Gothic" pointSize="14"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="営業・販売・サービス|No.1日本橋ウルハウス株式会社" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxl-Ro-U7F">
+                                <rect key="frame" x="10" y="54" width="322.5" height="105.5"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="14"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en8-1w-OY9">
+                                <rect key="frame" x="10" y="167.5" width="323" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="yaW-A7-Wxz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Nv-ty-ouS" firstAttribute="leading" secondItem="QNu-Ck-AqI" secondAttribute="leading" constant="10" id="1GE-PJ-P8r"/>
+                            <constraint firstItem="Fxl-Ro-U7F" firstAttribute="trailing" secondItem="4Nv-ty-ouS" secondAttribute="trailing" id="B0M-MZ-le4"/>
+                            <constraint firstItem="en8-1w-OY9" firstAttribute="centerX" secondItem="Fxl-Ro-U7F" secondAttribute="centerX" id="L6s-eM-DYs"/>
+                            <constraint firstAttribute="bottom" secondItem="en8-1w-OY9" secondAttribute="bottom" constant="8" id="Mxj-wP-tca"/>
+                            <constraint firstItem="4Nv-ty-ouS" firstAttribute="top" secondItem="QNu-Ck-AqI" secondAttribute="top" constant="8" id="UAi-7u-HGE"/>
+                            <constraint firstItem="Fxl-Ro-U7F" firstAttribute="top" secondItem="4Nv-ty-ouS" secondAttribute="bottom" constant="15" id="hFP-bD-0sP"/>
+                            <constraint firstItem="en8-1w-OY9" firstAttribute="top" secondItem="Fxl-Ro-U7F" secondAttribute="bottom" constant="8" id="kZG-Fr-nM4"/>
+                            <constraint firstItem="en8-1w-OY9" firstAttribute="width" secondItem="Fxl-Ro-U7F" secondAttribute="width" id="qyb-an-w8y"/>
+                            <constraint firstItem="Fxl-Ro-U7F" firstAttribute="leading" secondItem="4Nv-ty-ouS" secondAttribute="leading" id="vYo-3X-Dea"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="QNu-Ck-AqI" secondAttribute="top" id="1GR-08-aFd"/>
+                    <constraint firstItem="QNu-Ck-AqI" firstAttribute="centerX" secondItem="6Ne-Ye-EEI" secondAttribute="centerX" id="MlH-QG-VP3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="QNu-Ck-AqI" secondAttribute="bottom" constant="1.5" id="eE1-EN-jyx"/>
+                    <constraint firstItem="QNu-Ck-AqI" firstAttribute="width" secondItem="6Ne-Ye-EEI" secondAttribute="width" multiplier="284:326" id="p0U-RN-6eN"/>
+                    <constraint firstItem="4Nv-ty-ouS" firstAttribute="width" secondItem="6Ne-Ye-EEI" secondAttribute="width" multiplier="270:326" id="t63-A8-7wN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBottomConstraintCollectionTags" destination="Mxj-wP-tca" id="RYl-Au-eZl"/>
+                <outlet property="mHeightConstraintCollectionTags" destination="yaW-A7-Wxz" id="qve-3d-1Cg"/>
+                <outlet property="mLabelContent" destination="Fxl-Ro-U7F" id="6aZ-zY-PfU"/>
+                <outlet property="mLabelTitle" destination="4Nv-ty-ouS" id="QHO-WN-Dlr"/>
+                <outlet property="mLeadingConstraintLabelTitle" destination="1GE-PJ-P8r" id="aK1-MD-w9E"/>
+                <outlet property="mTopConstraintCollectionTags" destination="kZG-Fr-nM4" id="Azh-xe-bwO"/>
+                <outlet property="mTopConstraintLabelContent" destination="hFP-bD-0sP" id="dJL-vc-s4F"/>
+                <outlet property="mTopConstraintLabelTitle" destination="UAi-7u-HGE" id="jI4-5D-Kye"/>
+                <outlet property="mViewTags" destination="en8-1w-OY9" id="9eZ-ow-CJg"/>
+            </connections>
+            <point key="canvasLocation" x="159.5" y="291.5"/>
+        </tableViewCell>
+    </objects>
+</document>
